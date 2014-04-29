@@ -66,5 +66,6 @@ for curpos1 = 1:seqlength2
     end
 end
 figure;
-xlabel('Position'); ylabel('Position');
 imagesc(jentropy)
+xlabel('Position'); 
+ylabel('Position');
