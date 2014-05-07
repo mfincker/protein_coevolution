@@ -45,8 +45,15 @@ classdef Sector
 
                     % Protein information
 
-                    % Extract uniprot accession number
-                    sector.Uniprot = data.DBReferences.dbAccession;
+                    % Extract uniprot accession number(s) for simgle peptide
+                    % or complex
+                    uniprot = (regexp([data.DBReferences.database],'UNP   ')-1)/6 +1;
+                    uniprotAccession = {};
+                    for i = 1:size(uniprot,2)
+                        uniprotAccession{i} = data.DBReferences(i).dbAccession;
+                    end
+                    sector.Uniprot = uniprotAccession;
+
                     % Extract protein length
                     sector.ProteinLength = data.DBReferences.seqEnd - ...
                                         data.DBReferences.seqBegin +1;
