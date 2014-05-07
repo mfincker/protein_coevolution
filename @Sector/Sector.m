@@ -17,7 +17,7 @@ classdef Sector
     	ProteinLength
     	OrganismID
     	% Kingdom  % Manually curate it ? Script to get from ncbi
-    	% Location % How to get it ?
+        Membrane
     	EC
 
     	% Sector sequence properties
@@ -57,6 +57,13 @@ classdef Sector
                     src = reshape(src,1,numel(src));
                     taxonomyId = regexp(src, 'ORGANISM_TAXID:\s(\d*);', 'tokens');
                     sector.OrganismID = str2num(taxonomyId{1}{1});
+                    % Extract membrane location
+                    src = data.Keywords;
+                    % Reformat the character array to be searchable
+                    src = src';
+                    src = reshape(src,1,numel(src));
+                    membrane = [strfind(src, 'MEMBRANE') strfind(src, 'membrane')];
+                    sector.Membrane = ( size(membrane,2) > 0); 
                     % Extract protein EC number:
                     src = data.Compound;
                     % Reformat the character array to be searchable
