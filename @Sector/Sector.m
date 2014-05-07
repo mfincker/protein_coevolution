@@ -1,6 +1,6 @@
-classdef Sector
+classdef Sector % NOT READY YET !!!!!!
     %SECTOR class: each instance of this class corresponds to a 
-    %sector identified through SCA.
+    %sector identified through SCA. Does not support protein complexes yet !!!!
     %   A sector is a group of residues from a given protein that
     %	coevolved together. 
    	%	Property list:
@@ -32,7 +32,7 @@ classdef Sector
     methods
         % Constructor for the sector class
         % residueresidueIndexes is a row vector !!!
-        function sector = Sector(pdbId, residueresidueIndexes)
+        function sector = Sector(pdbId, residueresidueIndexes, uniprotNum)
             % Construction from the online pdb database
             % If no argument is given, construct an empty object
             if nargin > 0
@@ -54,56 +54,72 @@ classdef Sector
                     end
                     sector.Uniprot = uniprotAccession;
 
-                    % Extract protein length
-                    sector.ProteinLength = data.DBReferences.seqEnd - ...
-                                        data.DBReferences.seqBegin +1;
-                    % Extract organism taxonomical id
-                    src = data.Source;
-                    % Reformat the character array to be searchable
-                    src = src';
-                    src = reshape(src,1,numel(src));
-                    taxonomyId = regexp(src, 'ORGANISM_TAXID:\s(\d*);', 'tokens');
-                    sector.OrganismID = str2num(taxonomyId{1}{1});
-                    % Extract membrane location
-                    src = data.Keywords;
-                    % Reformat the character array to be searchable
-                    src = src';
-                    src = reshape(src,1,numel(src));
-                    membrane = [strfind(src, 'MEMBRANE') strfind(src, 'membrane')];
-                    sector.Membrane = ( size(membrane,2) > 0); 
-                    % Extract protein EC number:
-                    src = data.Compound;
-                    % Reformat the character array to be searchable
-                    src = src';
-                    src = reshape(src,1,numel(src));
-                    ecNum = regexp(src, 'EC:\s(.*);', 'tokens');
-                    sector.EC = ecNum{1}{1};
+                    if size(sector.Uniprot,2) == 1 % monomer
+                        % Extract protein length
+                        sector.ProteinLength = data.DBReferences.seqEnd - ...
+                                            data.DBReferences.seqBegin +1;
+                        % Extract organism taxonomical id
+                        src = data.Source;
+                        % Reformat the character array to be searchable
+                        src = src';
+                        src = reshape(src,1,numel(src));
+                        taxonomyId = regexp(src, 'ORGANISM_TAXID:\s(\d*);', 'tokens');
+                        sector.OrganismID = str2num(taxonomyId{1}{1});
+                        % Extract membrane location
+                        src = data.Keywords;
+                        % Reformat the character array to be searchable
+                        src = src';
+                        src = reshape(src,1,numel(src));
+                        membrane = [strfind(src, 'MEMBRANE') strfind(src, 'membrane')];
+                        sector.Membrane = ( size(membrane,2) > 0); 
+                        % Extract protein EC number:
+                        src = data.Compound;
+                        % Reformat the character array to be searchable
+                        src = src';
+                        src = reshape(src,1,numel(src));
+                        ecNum = regexp(src, 'EC:\s(.*);', 'tokens');
+                        sector.EC = ecNum{1}{1};
 
-                    % Sector sequence information
+                        % Sector sequence information
 
-                    sector.Length = numel(residueIndexes);
-                    sector.residueIndexes = residueIndexes;
-                    % Assuming the residue numbers are the same as the numbers for
-                    % the atom list in the PDB file. (Start at 27 for the G6PD)
-                    sector.Sequence = data.Sequence.Sequence(residueIndexes - ...
-                                        data.DBReferences.seqBegin + 1);
+                        sector.Length = numel(residueIndexes);
+                        sector.residueIndexes = residueIndexes;
+                        % Assuming the residue numbers are the same as the numbers for
+                        % the atom list in the PDB file. (Start at 27 for the G6PD)
+                        sector.Sequence = data.Sequence.Sequence(residueIndexes - ...
+                                            data.DBReferences.seqBegin + 1);
 
-                    % Get atom numbers that correspond to each residue in the sector
-                    atomResidue = [data.Model.Atom.resSeq];
-                    atomIndex = {};
-                    for i = 1:numel(residueIndexes)
-                        atomIndex{i} = find(atomResidue == residueIndexes(i))';
+                        % Get atom numbers that correspond to each residue in the sector
+                        atomResidue = [data.Model.Atom.resSeq];
+                        atomIndex = {};
+                        for i = 1:numel(residueIndexes)
+                            atomIndex{i} = find(atomResidue == residueIndexes(i))';
+                        end
+                        sector.Coordinates = atomIndex;
+
+
+                    else % protein complex
+                        sector.ProteinLength = -1;
+                        sector.OrganismID = -1;
+                        % Extract membrane location
+                        src = data.Keywords;
+                        % Reformat the character array to be searchable
+                        src = src';
+                        src = reshape(src,1,numel(src));
+                        membrane = [strfind(src, 'MEMBRANE') strfind(src, 'membrane')];
+                        sector.Membrane = ( size(membrane,2) > 0); 
+                        sector.EC = 'protein complex';
+
+                        % Sector sequence information
+
+                        sector.Length = numel(residueIndexes);
+                        sector.residueIndexes = residueIndexes;
+                        % Assuming the residue numbers are the same as the numbers for
+                        % the atom list in the PDB file. (Start at 27 for the G6PD)
+                        sector.Sequence = 'protein complex: need chain id';
+                        sector.Coordinates = 'protein complex: need chain id';
                     end
-                    sector.Coordinates = atomIndex;
 
-
-
-
-                    % For each residue
-                        % Extraxt x, y and z coordinates
-                        % Calculate centroid
-                        % Store it in a row vector at the same index as the corresponding
-                            % residue
 
                 catch err
                     disp(err);
