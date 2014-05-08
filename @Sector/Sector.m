@@ -1,10 +1,16 @@
-classdef Sector % NOT READY YET !!!!!!
+classdef Sector
     %SECTOR class: each instance of this class corresponds to a 
     %sector identified through SCA. Does not support protein complexes yet !!!!
     %   A sector is a group of residues from a given protein that
     %	coevolved together. 
-   	%	Property list:
-   	%	Method list:
+    %   Ex : sector = Sector('2BH9', [166 170 171 172 173 174 176 183 193 ...
+    %                                 198 199 200 201 202 203 204 205 206 ...
+    %                                 208 210 215 216 218 225 237 239 242 ...
+    %                                 243 245 ])
+    %       creates a sector from the pdb file 2BH9 with residues number 166, 170 ...
+    %       243, 245.
+    %       Once created, you can access the fields like in a structure.
+    %       The fields are not protected so be careful not to modify them.
     
     properties
         % Id corresponds to the sector id in the sector database
@@ -31,12 +37,12 @@ classdef Sector % NOT READY YET !!!!!!
     
     methods
         % Constructor for the sector class
-        % residueresidueIndexes is a row vector !!!
-        function sector = Sector(pdbId, residueresidueIndexes, uniprotNum)
+        % residueIndexes is a row vector !!!
+        function sector = Sector(pdbId, residueInd, uniprotNum)
             % Construction from the online pdb database
             % If no argument is given, construct an empty object
             if nargin > 0
-                residueIndexes = sort(residueresidueIndexes);
+                residueInd = sort(residueInd);
                 sector.Pdb = pdbId;
                 % In case your internet connection or PDB is down
                 try
@@ -82,20 +88,30 @@ classdef Sector % NOT READY YET !!!!!!
 
                         % Sector sequence information
 
-                        sector.Length = numel(residueIndexes);
-                        sector.residueIndexes = residueIndexes;
+                        sector.Length = numel(residueInd);
+                        sector.residueIndexes = residueInd;
                         % Assuming the residue numbers are the same as the numbers for
                         % the atom list in the PDB file. (Start at 27 for the G6PD)
-                        sector.Sequence = data.Sequence.Sequence(residueIndexes - ...
+                        sector.Sequence = data.Sequence.Sequence(residueInd - ...
                                             data.DBReferences.seqBegin + 1);
 
                         % Get atom numbers that correspond to each residue in the sector
                         atomResidue = [data.Model.Atom.resSeq];
                         atomIndex = {};
-                        for i = 1:numel(residueIndexes)
-                            atomIndex{i} = find(atomResidue == residueIndexes(i))';
+                        for i = 1:numel(residueInd)
+                            atomIndex{i} = find(atomResidue == residueInd(i))';
+
                         end
-                        sector.Coordinates = atomIndex;
+                        % For each residue, get X, Y and Z coordinates of all atoms and
+                        % calculate the centroid
+                        centroids = [];
+                        for i = 1:numel(residueInd)
+                            atomCoord = [data.Model.Atom(atomIndex{i}).X ; ...
+                                         data.Model.Atom(atomIndex{i}).Y ; ...
+                                         data.Model.Atom(atomIndex{i}).Z];
+                            centroids = [centroids mean(atomCoord,2)];
+                        end
+                        sector.Coordinates = centroids;
 
 
                     else % protein complex
@@ -122,7 +138,8 @@ classdef Sector % NOT READY YET !!!!!!
 
 
                 catch err
-                    disp(err);
+                    rethrow(err);
+                    
                 end
             end
         end
