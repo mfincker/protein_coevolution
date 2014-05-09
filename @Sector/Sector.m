@@ -19,6 +19,7 @@ classdef Sector
 
     	% Protein properties
     	Pdb
+        ChainID
     	Uniprot
     	ProteinLength
     	OrganismID
@@ -51,19 +52,22 @@ classdef Sector
 
                     % Protein information
 
-                    % Extract uniprot accession number(s) for simgle peptide
-                    % or complex
+                    % Extract uniprot accession number(s) of the PDB file
                     uniprot = (regexp([data.DBReferences.database],'UNP   ')-1)/6 +1;
                     uniprotAccession = {};
                     for i = 1:size(uniprot,2)
-                        uniprotAccession{i} = data.DBReferences(i).dbAccession;
+                        uniprotAccession{i} = data.DBReferences(i).dbAccession(1:6);
                     end
-                    sector.Uniprot = uniprotAccession;
 
-                    if size(sector.Uniprot,2) == 1 % monomer
+                    % monomer
+                    if size(uniprotAccession,2) == 1 
+                        sector.Uniprot = uniprotAccession{1};
+                        sector.ChainID = 'A';
+
                         % Extract protein length
                         sector.ProteinLength = data.DBReferences.seqEnd - ...
                                             data.DBReferences.seqBegin +1;
+
                         % Extract organism taxonomical id
                         src = data.Source;
                         % Reformat the character array to be searchable
@@ -71,6 +75,7 @@ classdef Sector
                         src = reshape(src,1,numel(src));
                         taxonomyId = regexp(src, 'ORGANISM_TAXID:\s(\d*);', 'tokens');
                         sector.OrganismID = str2num(taxonomyId{1}{1});
+
                         % Extract membrane location
                         src = data.Keywords;
                         % Reformat the character array to be searchable
@@ -78,6 +83,7 @@ classdef Sector
                         src = reshape(src,1,numel(src));
                         membrane = [strfind(src, 'MEMBRANE') strfind(src, 'membrane')];
                         sector.Membrane = ( size(membrane,2) > 0); 
+
                         % Extract protein EC number:
                         src = data.Compound;
                         % Reformat the character array to be searchable
@@ -114,26 +120,86 @@ classdef Sector
                         sector.Coordinates = centroids;
 
 
-                    else % protein complex
-                        sector.ProteinLength = -1;
-                        sector.OrganismID = -1;
-                        % Extract membrane location
-                        src = data.Keywords;
-                        % Reformat the character array to be searchable
-                        src = src';
-                        src = reshape(src,1,numel(src));
-                        membrane = [strfind(src, 'MEMBRANE') strfind(src, 'membrane')];
-                        sector.Membrane = ( size(membrane,2) > 0); 
-                        sector.EC = 'protein complex';
+                    % protein complex
+                    else 
+                        % Check if a uniprot number as been entered to identify the
+                        % protein of interest in the complex
+                        if (nargin < 3)
+                            % Extract protein length
+                            sector.ProteinLength = -1;
+                            sector.OrganismID = -1;
+                            sector.Uniprot = uniprotAccession;
 
-                        % Sector sequence information
+                            % Extract membrane location
+                            src = data.Keywords;
+                            % Reformat the character array to be searchable
+                            src = src';
+                            src = reshape(src,1,numel(src));
+                            membrane = [strfind(src, 'MEMBRANE') strfind(src, 'membrane')];
+                            sector.Membrane = ( size(membrane,2) > 0); 
+                            sector.EC = 'protein complex';
 
-                        sector.Length = numel(residueIndexes);
-                        sector.residueIndexes = residueIndexes;
-                        % Assuming the residue numbers are the same as the numbers for
-                        % the atom list in the PDB file. (Start at 27 for the G6PD)
-                        sector.Sequence = 'protein complex: need chain id';
-                        sector.Coordinates = 'protein complex: need chain id';
+                            % Sector sequence information
+
+                            sector.Length = numel(residueInd);
+                            sector.residueIndexes = residueInd;
+                            % Assuming the residue numbers are the same as the numbers for
+                            % the atom list in the PDB file. (Start at 27 for the G6PD)
+                            sector.Sequence = 'protein complex: need a uniprot number';
+                            sector.Coordinates = 'protein complex: need a uniprot number'; 
+
+                        else
+                            % Extract chainId:
+                            % In a multi-mer with multiple occurences of the same protein,
+                            % the first occurence of the protein is chosen as chainID.
+                            chainIndex = find(strcmp(uniprotNum,uniprotAccession) == 1, 1);
+                            sector.ChainID = data.DBReferences(chainIndex).chainID;
+
+                            % Uniprot accession number
+                            sector.Uniprot = uniprotNum;
+
+                            % Extract protein length
+                            sector.ProteinLength = data.DBReferences(chainIndex).seqEnd - ...
+                                            data.DBReferences(chainIndex).seqBegin +1;
+
+                            % Extract taxonomical ID:
+                                % Find mol_id corresponding to the chainID:
+                            cmpd = data.Compound;
+                            cmpd = src';
+                            cmpd = reshape(cmpd,1,numel(cmpd));
+                            cmpdFlip = fliplr(cmpd);
+                            molID = regexp(cmpdFlip,['(' sector.ChainID '|' sector.ChainID ...
+                                    '[A-Za-a0-9 ,]*?)\s:NIAHC.*?;(?<mol_id>\d*)\s:DI_LOM'],'names');
+                            % should only return a single mol_id, but might bug if same chainID in two 
+                            % molecules ...
+                            molID = fliplr(molID.mol_id);
+
+                                % Match the mol_id and the taxonomical data:
+                            src = data.Source;
+                            % Reformat the character array to be searchable
+                            src = src';
+                            src = reshape(src,1,numel(src));
+
+
+                            sector.OrganismID = -1;
+
+                            % Extract membrane location
+                            src = data.Keywords;
+                            % Reformat the character array to be searchable
+                            src = src';
+                            src = reshape(src,1,numel(src));
+                            membrane = [strfind(src, 'MEMBRANE') strfind(src, 'membrane')];
+                            sector.Membrane = ( size(membrane,2) > 0); 
+                            sector.EC = 'protein complex';
+
+                            % Sector sequence information
+                            sector.Length = numel(residueInd);
+                            sector.residueIndexes = residueInd;
+                            % Assuming the residue numbers are the same as the numbers for
+                            % the atom list in the PDB file. (Start at 27 for the G6PD)
+                            sector.Sequence = 'protein complex: need chain id';
+                            sector.Coordinates = 'protein complex: need chain id';
+                        end
                     end
 
 
