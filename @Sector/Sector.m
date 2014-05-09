@@ -183,23 +183,26 @@ classdef Sector
                             molID = fliplr(molID.mol_id);
                                 % EC number if it exists:
                             cmpdSplit = regexp(cmpd,'MOL_ID: ','split');
-                            if strncmp(cmpdSplit{str2double(molID) + 1}, [molID ';'], ...
-                                        size(molID, 2) + 1) == 1
-                                ec = regexp(cmpdSplit{str2double(molID) + 1}, ...
-                                    'EC:\s(?<ec>\d+\.\d+\.\d+\.\d+);', 'names');
+                            ec = cmpdSplit{find( strncmp(cmpdSplit, [molID ';'], size(molID, 2) + 1) == 1, 1)};
+
+                            % if strncmp(cmpdSplit{str2double(molID) + 1}, [molID ';'], ...
+                            %             size(molID, 2) + 1) == 1
+                            %     ec = regexp(cmpdSplit{str2double(molID) + 1}, ...
+                            %         'EC:\s(?<ec>\d+\.\d+\.\d+\.\d+);', 'names');
+                            ec = regexp(ec, 'EC:\s(?<ec>\d+\.\d+\.\d+\.\d+);', 'names');
                                 if numel(ec) == 1
                                     sector.EC = ec.ec;
                                 else
                                     sector.EC = 'undefined';
                                 end
-                            end
+                            % end
 
                             % Extract taxonomical data
                                 % Match the mol_id and the taxonomical data:
                             src = data.Source;
                             % Reformat the character array to be searchable
                             src = src';
-                            src = reshape(src,1,numel(src));
+                            src = reshape(src, 1, numel(src));
                             srcSplit = regexp(src, 'MOL_ID: ', 'split');
                             taxonomyId = srcSplit{find( strncmp(srcSplit, [molID ';'], size(molID, 2) + 1) == 1, 1)};
                             taxonomyId = regexp(taxonomyId, 'ORGANISM_TAXID:\s(?<num>\d+)','names');
@@ -218,7 +221,11 @@ classdef Sector
                             sector.residueIndexes = residueInd;
                             % Assuming the residue numbers are the same as the numbers for
                             % the atom list in the PDB file. (Start at 27 for the G6PD)
-                            sector.Sequence = 'protein complex: need chain id';
+                            seqIndex = find(strcmp({data.Sequence.ChainID}, sector.ChainID) == 1,1);
+                            sector.Sequence = data.Sequence(seqIndex).Sequence(residueInd - ...
+                                            data.DBReferences(chainIndex).seqBegin + 1);
+
+
                             sector.Coordinates = 'protein complex: need chain id';
                         end
                     end
