@@ -200,9 +200,10 @@ classdef Sector
                             % Reformat the character array to be searchable
                             src = src';
                             src = reshape(src,1,numel(src));
-
-
-                            sector.OrganismID = -1;
+                            srcSplit = regexp(src, 'MOL_ID: ', 'split');
+                            taxonomyId = srcSplit{find( strncmp(srcSplit, [molID ';'], size(molID, 2) + 1) == 1, 1)};
+                            taxonomyId = regexp(taxonomyId, 'ORGANISM_TAXID:\s(?<num>\d+)','names');
+                            sector.OrganismID = str2num(taxonomyId.num);
 
                             % Extract membrane location
                             src = data.Keywords;
