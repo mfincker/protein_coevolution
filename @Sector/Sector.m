@@ -47,8 +47,16 @@ classdef Sector
                 sector.Pdb = pdbId;
                 % In case your internet connection or PDB is down
                 try
-                    % Try to get information form
-                    data = getpdb(pdbId);
+                    dir = '../PDBfiles/';
+                    if (exist(dir, 'file') == 7 & exist([dir pdbId '.pdb'], 'file') == 2)
+                        data = pdbread([dir pdbId '.pdb']);
+
+                    else
+                        % Try to get information from PDB online
+                        % and create a local copy of the pdb file for next time
+                        data = getpdb(pdbId);
+                        pdbwrite([dir pdbId '.pdb'], data);
+                    end
 
                     % Protein information
 
