@@ -162,10 +162,10 @@ classdef Sector
                             sector.ProteinLength = data.DBReferences(chainIndex).seqEnd - ...
                                             data.DBReferences(chainIndex).seqBegin +1;
 
-                            % Extract taxonomical ID:
+                            % Extract EC number if it exists
                                 % Find mol_id corresponding to the chainID:
                             cmpd = data.Compound;
-                            cmpd = src';
+                            cmpd = cmpd';
                             cmpd = reshape(cmpd,1,numel(cmpd));
                             cmpdFlip = fliplr(cmpd);
                             molID = regexp(cmpdFlip,['(' sector.ChainID '|' sector.ChainID ...
@@ -173,7 +173,20 @@ classdef Sector
                             % should only return a single mol_id, but might bug if same chainID in two 
                             % molecules ...
                             molID = fliplr(molID.mol_id);
+                                % EC number if it exists:
+                            cmpdSplit = regexp(cmpd,'MOL_ID: ','split');
+                            if strncmp(cmpdSplit{str2double(molID) + 1}, [molID ';'], ...
+                                        size(molID, 2) + 1) == 1
+                                ec = regexp(cmpdSplit{str2double(molID) + 1}, ...
+                                    'EC:\s(?<ec>\d+\.\d+\.\d+\.\d+);', 'names');
+                                if numel(ec) == 1
+                                    sector.EC = ec.ec;
+                                else
+                                    sector.EC = 'undefined';
+                                end
+                            end
 
+                            % Extract taxonomical data
                                 % Match the mol_id and the taxonomical data:
                             src = data.Source;
                             % Reformat the character array to be searchable
@@ -190,7 +203,6 @@ classdef Sector
                             src = reshape(src,1,numel(src));
                             membrane = [strfind(src, 'MEMBRANE') strfind(src, 'membrane')];
                             sector.Membrane = ( size(membrane,2) > 0); 
-                            sector.EC = 'protein complex';
 
                             % Sector sequence information
                             sector.Length = numel(residueInd);
