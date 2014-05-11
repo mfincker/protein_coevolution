@@ -227,6 +227,26 @@ classdef Sector
 
 
                             sector.Coordinates = 'protein complex: need chain id';
+
+                            % Get atom numbers that correspond to each residue in the sector
+                            atomChainIndex = find(strcmp({data.Model.Atom.chainID}, sector.ChainID) == 1);
+                            atomResidue = [data.Model.Atom(atomChainIndex).resSeq];
+                            atomIndex = {};
+                            for i = 1:numel(residueInd)
+                                atomIndex{i} = find(atomResidue == residueInd(i))';
+
+                            end
+                            % For each residue, get X, Y and Z coordinates of all atoms and
+                            % calculate the centroid
+                            centroids = [];
+                            for i = 1:numel(residueInd)
+                                atomCoord = [data.Model.Atom(atomIndex{i}).X ; ...
+                                             data.Model.Atom(atomIndex{i}).Y ; ...
+                                             data.Model.Atom(atomIndex{i}).Z];
+                                centroids = [centroids mean(atomCoord,2)];
+                            end
+                            sector.Coordinates = centroids;
+
                         end
                     end
 
