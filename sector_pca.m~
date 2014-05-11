@@ -73,24 +73,18 @@ ylabel('y coordinates', 'FontSize', 14)
 zlabel('z coodinates', 'FontSize', 14)
 title('PCA of eigenvectors', 'FontSize', 16)
 
-
+plot(sect_eigvectors)
 %%
 %decompose the vectors
-lambda_coordinates = inv(V)*diff_avg';
+lambda_coordiantes = inv(V)*diff_avg';
 figure
-imagesc(lambda_coordinates);
+imagesc(lambda_coordiantes);
 colorbar
 
 %%
-% plot lambda_coordinates along Eigenvectors
 figure
-scatter3(lambda_coordinates(1,:), lambda_coordinates(2, :),...
-    lambda_coordinates(3, :), 'filled')
 
-title('Coordiantes of Sectors in Eigenspace', 'FontSize', 16)
-xlabel('eigenvector 1', 'FontSize', 14) 
-ylabel('eigenvector 2', 'FontSize', 14) 
-zlabel('eigenvector 3', 'FontSize', 14)
+scatter3(lambda_coordiantes)
 %%
 % find the weight of each mode
 sect_eigenvalues = diag(D);
