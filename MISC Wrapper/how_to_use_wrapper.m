@@ -13,7 +13,7 @@ for curseq = 1:numseq
 end
 msa = aa2int(msa);
 
-msa = uint32(msa);
+msa = double(uint32(msa));
 %% get reference sequence
 refID = 'P11413';
 gensearch = getgenpept(refID);
