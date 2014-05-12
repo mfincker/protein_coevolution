@@ -46,16 +46,19 @@ colorbar;
 % calculate eigenvectors
 [V,D] = eigs(covMat);
 
+eigvect1 = V(:,1)*D(1,1);
+eigvect2 = V(:,2)*D(2,2);
+eigvect3 = V(:,3)*D(3,3);
+
+
+sect_eigvectors = [eigvect1 eigvect2 eigvect3];
 
 %% Plot data with eigenvectors
 % choose to plot
 
-    scatter3(sect1cord_x,sect1cord_y,sect1cord_z,20,'r','filled');
-    eigvect1 = V(:,1)*D(1,1);
-    eigvect2 = V(:,2)*D(2,2);
-    eigvect3 = V(:,3)*D(3,3);
+scatter3(sect1cord_x,sect1cord_y,sect1cord_z,20,'r','filled');
+   
 
-    sect_eigvectors = [eigvect1 eigvect2 eigvect3];
 if showplots == 1
     hold on;
     plot3([avg(1)-eigvect1(1) avg(1)+eigvect1(1)], [avg(2)-eigvect1(2) avg(2)+eigvect1(2)],...
@@ -80,10 +83,11 @@ end
 %decompose the vectors
 
     lambda_coordinates = inv(V)*diff_avg';
+ if showplots == 1
     figure;
     imagesc(lambda_coordinates);
     colorbar;
-
+ end
 
 
 %%
@@ -97,6 +101,7 @@ title('Coordiantes of Sectors in Eigenspace', 'FontSize', 16);
 xlabel('eigenvector 1', 'FontSize', 14);
 ylabel('eigenvector 2', 'FontSize', 14);
 zlabel('eigenvector 3', 'FontSize', 14);
+end
 %%
 % find the weight of each mode
 sect_eigenvalues = diag(D);
@@ -105,11 +110,13 @@ for i=1:3;
 %     fprintf('The fraction of the variance from mode %d is %g\n',i,variances(i));
 end;
 %%
-figure;
-bar(variances);
-xlabel('mode number', 'FontSize', 14);
-ylabel('distance (angstroms)', 'FontSize', 14);
-title('Fraction of variance of sector by mode number', 'FontSize', 16);
+if showplots == 1
+    figure;
+    bar(variances);
+    xlabel('mode number', 'FontSize', 14);
+    ylabel('distance (angstroms)', 'FontSize', 14);
+    title('Fraction of variance of sector by mode number', 'FontSize', 16);
+end
 % 
 
 end

@@ -31,7 +31,9 @@ avg = mean(pca_mat);
 
 numvect = size(pca_mat, 1); %number of vectors;
 diff_avg = pca_mat-repmat(avg,numvect,1);
-scatter(diff_avg(:,1), diff_avg(:,2),5, 'filled');
+if showplots == 1
+    scatter(diff_avg(:,1), diff_avg(:,2),5, 'filled');
+end
 
 % covariance matrix
 ndim = size(pca_mat,2); 
@@ -40,26 +42,27 @@ for i=1:ndim ;
         covMat(i,j) = 1/(numvect-1)*sum(diff_avg(:,i).*diff_avg(:,j));
     end;
 end;
-imagesc(covMat);
-colorbar;
 
+if showplots == 1
+    imagesc(covMat);
+    colorbar;
+    title('Covariation matrix')
+end
 % calculate eigenvectors
 [V,D] = eigs(covMat);
 
+eigvect1 = V(:,1)*D(1,1);
+eigvect2 = V(:,2)*D(2,2);
+eigvect3 = V(:,3)*D(3,3);
+
+
+sect_eigvectors = [eigvect1 eigvect2 eigvect3];
 
 %% Plot data with eigenvectors
 % choose to plot
 if showplots == 1
     scatter3(sect1cord_x,sect1cord_y,sect1cord_z,20,'r','filled');
-    eigvect1 = V(:,1)*D(1,1);
-    eigvect2 = V(:,2)*D(2,2);
-    eigvect3 = V(:,3)*D(3,3);
-
-end
-
-sect_eigvectors = [eigvect1 eigvect2 eigvect3];
-
-if showplots == 1
+  
     hold on;
     plot3([avg(1)-eigvect1(1) avg(1)+eigvect1(1)], [avg(2)-eigvect1(2) avg(2)+eigvect1(2)],...
     [avg(3)-eigvect1(3) avg(3)+eigvect1(3)], 'Color',  [0 0 1], 'LineWidth', 3);
