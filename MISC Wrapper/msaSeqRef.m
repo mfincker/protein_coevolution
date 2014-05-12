@@ -19,7 +19,7 @@ function resmap = msaSeqRef(msa,refseq,resnum)
 % a corresponding position in the sequence of interest are NaN.
 
 % msa concensus sequence:
-s1 = int2aa(mode(msa,1));
+s1 = int2aa(mode(double(msa),1));
 
 % reference sequence:
 if ischar(refseq)

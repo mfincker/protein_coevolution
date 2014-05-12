@@ -12,8 +12,6 @@ for curseq = 1:numseq
     msa(curseq,:) = rawdata(curseq).Sequence;
 end
 msa = aa2int(msa);
-
-msa = double(uint32(msa));
 %% get reference sequence
 refID = 'P11413';
 gensearch = getgenpept(refID);
