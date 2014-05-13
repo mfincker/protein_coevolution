@@ -1,18 +1,18 @@
-function [ pdbStruct ] = getPdbData( pdb )
+function [ pdbStruct ] = getPdbData( pdbId )
 
 	% pdb is a char array containing a pdb id
-	if ischar(pdb)
+	if ischar(pdbId)
 		PDBdirectory = '../PDBfiles/';
         if (exist(PDBdirectory, 'file') == 7 && ...
-        	exist([PDBdirectory pdb '.pdb'], 'file') == 2)
-            pdbStruct = pdbread([PDBdirectory pdb '.pdb']);
+        	exist([PDBdirectory pdbId '.pdb'], 'file') == 2)
+            pdbStruct = pdbread([PDBdirectory pdbId '.pdb']);
         else
         	try
 	            % Try to get information from PDB online
 	            % and create a local copy of the pdb file for next time
 	            pdbStruct = getpdb(pdbId);
 	            pdbwrite([PDBdirectory pdbId '.pdb'], pdbStruct);
-	        catch error
+	        catch err
 	        	rethrow(err);
 	        end
         end
