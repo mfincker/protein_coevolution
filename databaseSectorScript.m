@@ -3,11 +3,13 @@
 % the '../prokaryote_MSA/' directory.
 
 
-MSAdirectory = '../prokaryote_MSA/';
+MSAdirectory = '../prokaryote_MSA_copy/';
 
 fileList = dir([MSAdirectory '*-aligned.fasta']);
 
 databaseSector = {};
+MSAnotWorking = {};
+MSAworking = {};
 
 for i = 1:numel(fileList)
 	name = fileList(i).name;
@@ -34,8 +36,13 @@ for i = 1:numel(fileList)
 	sequence = data.Sequence.Sequence;
 	residue_numbers = [1:length(sequence)] + data.DBReferences.seqBegin - 1 ;
 	%% get clusters!!
-	[clusters,extra] = miscwrapper(msa,sequence,residue_numbers);
-	disp(['For' pdbId.id ': found ', num2str(length(clusters)), ' clusters!']);
+    try
+        [clusters,extra] = miscwrapper(msa,sequence,residue_numbers);
+        disp(['For' pdbId.id ': found ', num2str(length(clusters)), ' clusters!']);
+        MSAworking = [MSAworking {filePath}];
+    catch err
+        MSAnotWorking = [MSAnotWorking {filePath}];
+    end
 
 	for j = 1:numel(clusters)
 		databaseSector = [databaseSector {Sector(data, clusters{j})}];
@@ -43,7 +50,9 @@ for i = 1:numel(fileList)
 
 end
 
-save('./smallSectorDatabase.mat', 'databaseSector')
+save('./prokaryote_MSA_SectorDatabase.mat', 'databaseSector');
+save('./prokaryote_MSAnotWorking.mat', 'MSAnotWorking');
+save('./prokaryote_MSAworking.mat', 'MSAworking');
 
 
 
