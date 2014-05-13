@@ -1,4 +1,4 @@
-function [seqDistPDB_sort, I, scPlot] = msa_sort(pdbID)
+function [seqDistPDB_sort, I, nCloseSeq] = msa_sort(pdbID)
 
 %% Sorting MSA by Similarity to PDB Sequence
 % This function takes in a string of PDB ID, sorts the sequences in the
@@ -13,7 +13,7 @@ function [seqDistPDB_sort, I, scPlot] = msa_sort(pdbID)
 %%
 % Output:
 %%
-% 1. A scatterplot of the distances from the sequences in the MSA to the
+% 1. A histogram of the distances from the sequences in the MSA to the
 % PDB sequence. The distance is measured with scoring matrix BLOSUM60.
 %%
 % 2. seqDistPDB_sort: the sorted array of distances between MSA sequences
@@ -30,7 +30,6 @@ pdb_sequence = cellstr(protein_pdb.Sequence.Sequence);
 dirName = sprintf('./prokaryote_MSA/%s-aligned.fasta',pdbID);
 rawData = fastaread(dirName);
 nSeq = length(rawData);
-seqLength = length(rawData(1).Sequence);
 
 %% Convert MSA into Cell Array of strings of characters
 msa = cell(nSeq,1);
@@ -52,10 +51,11 @@ for curr = 1:nSeq
     end
 end
 [seqDistPDB_sort, I] = sort(seqDistPDB);
-%% Plot the Distances to PDB
-% Only plotting the sequences with distances smaller than 10, because the
+
+%% The number of close sequences to PDB sequence
+% Only counting the sequences with distances smaller than 10, because the
 % value may be as large as 30 and dwarf all the other values, making the
-% plot mostly an horizontal line.
+% scatterplot mostly an horizontal line.
 
 nCloseSeq = nSeq;
 for curr = 1:length(seqDistPDB_sort)
@@ -63,8 +63,3 @@ for curr = 1:length(seqDistPDB_sort)
         nCloseSeq = nCloseSeq - 1;
     end
 end
-scPlot = scatter(linspace(1, nSeq, nSeq), seqDistPDB_sort);
-xLabel = xlabel('Number of Sequences'); set(xLabel, 'Fontsize',14);
-yLabel = ylabel('Distance to PDB Sequence'); set(yLabel, 'Fontsize',14);
-%legend(pdbID);
-
