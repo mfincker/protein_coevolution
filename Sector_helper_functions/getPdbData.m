@@ -10,8 +10,8 @@ function [ pdbStruct ] = getPdbData( pdb )
         	try
 	            % Try to get information from PDB online
 	            % and create a local copy of the pdb file for next time
-	            pdbStruct = getpdb(pdb);
-	            pdbwrite([PDBdirectory pdb '.pdb'], pdbStruct);
+	            pdbStruct = getpdb(pdbId);
+	            pdbwrite([PDBdirectory pdbId '.pdb'], pdbStruct);
 	        catch error
 	        	rethrow(err);
 	        end

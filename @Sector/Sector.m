@@ -42,9 +42,12 @@ classdef Sector
 
                 % Create the matlab pdb structure corresponding
                 % to the pdb argument:
-                %% TODO: write getPdbData() and report the local
-                %% library support in there.
-                data = getPdbData(pdb);
+                if ischar(pdb)
+                    data = getPdbData(pdb);
+                else
+                    data = pdb;
+                end
+
 
                 sector.Pdb = data.Header.idCode;
                     % disp(['PDB id : ' sector.Pdb]);

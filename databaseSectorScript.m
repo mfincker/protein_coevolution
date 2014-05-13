@@ -28,24 +28,14 @@ for i = 1:numel(fileList)
 	msa = aa2int(msa);
 
 	% get reference sequence
-	pdbDirectory = '../PDBfiles/';
 	pdbId = regexp(name, '(?<id>.*)-aligned.fasta','names');
-	pdbId = pdbId.id;
-    if (exist(pdbDirectory, 'file') == 7 & exist([pdbDirectory pdbId '.pdb'], 'file') == 2)
-    	data = pdbread([pdbDirectory pdbId '.pdb']);
-
-    else
-      	% Try to get information from PDB online
-        % and create a local copy of the pdb file for next time
-        data = getpdb(pdbId);
-        pdbwrite([pdbDirectory pdbId '.pdb'], data);
-    end
+	data = getPdbData(pdbId.id);
 
 	sequence = data.Sequence.Sequence;
 	residue_numbers = [1:length(sequence)] + data.DBReferences.seqBegin - 1 ;
 	%% get clusters!!
 	[clusters,extra] = miscwrapper(msa,sequence,residue_numbers);
-	disp(['For' pdbId ': found ', num2str(length(clusters)), ' clusters!']);
+	disp(['For' pdbId.id ': found ', num2str(length(clusters)), ' clusters!']);
 
 	for j = 1:numel(clusters)
 		databaseSector = [databaseSector {Sector(data, clusters{j})}];
