@@ -1,4 +1,8 @@
-function [eigVect, eigVal, aaEigenBase] = residuePCA ( aaDBcount, normalize, graph )
+function [eigVect, eigVal, aaEigenBase] = residuePCA ( aaDBcount, ...
+												 normalize, graph )
+%RESIDUEPCA calculates the covariance matrix of the matrix of aa
+%occurences and returns its eigen vectors and eigenvalues, as well
+%as the matrix of aa occurences in the eigen base.
 	% PCA on normalized data
 	if normalize == 1
 		% Transpose to have aa as column and
@@ -60,7 +64,8 @@ function [eigVect, eigVal, aaEigenBase] = residuePCA ( aaDBcount, normalize, gra
 	    aaProjection2dim = aaEigenBase(end-1:end,:);
 	    figure
 	    scatter(aaProjection2dim(2,:),aaProjection2dim(1,:));
-	    title('Projection on the 2 highest modes');
+	    title(['Projection of the matrix of amino acid' char(10) ...
+	    		'counts on the 2 highest modes']);
 	    xlabel('PCA 20');
 	    ylabel('PCA 19');
 
@@ -68,7 +73,8 @@ function [eigVect, eigVal, aaEigenBase] = residuePCA ( aaDBcount, normalize, gra
 	    aaProjection3dim = aaEigenBase(end-2:end,:);
 	    figure
 	    scatter3(aaProjection3dim(3,:),aaProjection3dim(2,:),aaProjection3dim(1,:));
-	    title('Projection on the 3 highest modes');
+	    title(['Projection of the matrix of amino acid' char(10) ...
+	    		'counts on the 3 highest modes']);
 	    xlabel('PCA 20');
 	    ylabel('PCA 19');
 	    zlabel('PCA 18');
