@@ -100,7 +100,7 @@ figure;
 scatter3(lambda_coordinates(1,:), lambda_coordinates(2, :),...
     lambda_coordinates(3, :), 'filled');
 
-title('Coordiantes of Sectors in Eigenspace', 'FontSize', 16);
+title('Coordinates of Sectors in Eigenspace', 'FontSize', 16);
 xlabel('eigenvector 1', 'FontSize', 14);
 ylabel('eigenvector 2', 'FontSize', 14);
 zlabel('eigenvector 3', 'FontSize', 14);
