@@ -3,15 +3,15 @@ function [ PCA_loop_results ] = pca_loop( sectorDatabase, showplots)
     %pca_loop will return the pca results, and plot and compare differnet
     %pca results for all sectors. 
 
-% to keep track of the  lambdas for each sector.
-PCAresults = zeros(numel(sectorDatabase), 3) 
-size(PCAresults)
+	% to keep track of the  lambdas for each sector.
+	PCAresults = zeros(3, numel(sectorDatabase)) ;
+	size(PCAresults)
 
-for i = 1:numel(sectorDatabase)
-    PCAresults( i, :) = sector_pca( sectorDatabase{1, i}.Coordinates, 0 )
-end
+	for i = 1:numel(sectorDatabase)
+	    PCAresults( i, :) = sector_pca( sectorDatabase{i}.Coordinates, 0 )
+	end
 
-% visualize the data in a meaningful way.
+	% visualize the data in a meaningful way.
 
 end
 
