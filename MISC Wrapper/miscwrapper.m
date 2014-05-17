@@ -79,7 +79,7 @@ for l = 1:length(clusts)
     if median(curkeep(:)) - avemisc > threshmisc
         curclust = atsp(clusts{l});
         curclust(~curclust) = [];
-        if length(curclust)>=3
+        if length(curclust)>=3 && length(curclust)<150
             refclusts{end+1} = curclust;
             rawrefclusts{end+1} = clusts{l};
             % reorder to show clusters in matrix
