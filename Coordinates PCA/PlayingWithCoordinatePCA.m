@@ -286,6 +286,26 @@ ylabel('eigenValue 1');
 zlabel('eigenValue 2');
 
 
+figure
+subplot(1,3,1);
+plot(eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(2,:),'*');
+hold on;
+plot(eigenValueDB_contributionRaw(1,membraneGroup),eigenValueDB_contributionRaw(2,membraneGroup),'r*');
+subplot(1,3,2);
+plot(eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(3,:),'*');
+hold on;
+plot(eigenValueDB_contributionRaw(1,membraneGroup),eigenValueDB_contributionRaw(3,membraneGroup),'r*');
+subplot(1,3,3);
+plot(eigenValueDB_contributionRaw(2,:),eigenValueDB_contributionRaw(3,:),'*');
+hold on;
+plot(eigenValueDB_contributionRaw(2,membraneGroup),eigenValueDB_contributionRaw(3,membraneGroup),'r*');
+
+
+
+
+
+
+
 
 
 
