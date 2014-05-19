@@ -28,64 +28,73 @@ seedgi = seedseq.GI;
 seedseq = seedseq.Sequence;
 residue_numbers = 1:length(seedseq);
 
-disp(['Blasting accession ', acc]);
-rid = blastncbi(seedseq,'blastp','Alignments',tokeep);
-
-%% download blast
-clear blastresults
-disp('Attempting to download blast results.');
-returnblast = 0;
-while ~returnblast
-    try
-        blastresults = getblast_hack(rid,'Alignments',tokeep);
-        returnblast = 1;
-    catch
-        for i = 1:52
-            fprintf('\b');
-        end
-        fprintf('\b.');
-    end
-end
-disp('Success!');
-%% get GI values from BLAST
-ids = '';
-for l = 1:length(blastresults.Hits)
-    splits = find(blastresults.Hits(l).Name=='|');
-    gi = blastresults.Hits(l).Name(4:(splits(2)-1));
-    ids = [ids,',',gi];
-end
-ids = ids(2:end);
-%% download their full FASTA sequences
-disp('Downloading sequences of blast hits');
-divides = find(ids==',');
-towriteout = '';
 filenameblast = [acc,'-',num2str(tokeep),'-rawblast.fasta'];
+if exist(filenameblast) == 0
+    disp(['Blasting accession ', acc]);
+    rid = blastncbi(seedseq,'blastp','Alignments',tokeep);
 
-fid = fopen(filenameblast,'w');
-stepby = 1:300:(length(divides)-1);
-if stepby(end)~=(length(divides)-1)
-    stepby(end+1) = (length(divides)-1);
-end
-for l = 1:(length(stepby)-1)
-    curids = ids((divides(stepby(l))+1):(divides(stepby(l+1))-1));
-    url = ['http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&rettype=fasta&id=',curids];
-    toadd = urlread(url);
-    nofasta = strfind(toadd,'Supplied id parameter is empty.');
-    if ~isempty(nofasta)
-        toadd = toadd(1:(nofasta(1)-1));
+    %% download blast
+    clear blastresults
+    disp('Attempting to download blast results.');
+    returnblast = 0;
+    while ~returnblast
+        try
+            blastresults = getblast_hack(rid,'Alignments',tokeep);
+            returnblast = 1;
+        catch
+            for i = 1:52
+                fprintf('\b');
+            end
+            fprintf('\b.');
+        end
     end
-    fprintf(fid,toadd);
+    disp('Success!');
+    %% get GI values from BLAST
+    ids = '';
+    for l = 1:length(blastresults.Hits)
+        splits = find(blastresults.Hits(l).Name=='|');
+        gi = blastresults.Hits(l).Name(4:(splits(2)-1));
+        ids = [ids,',',gi];
+    end
+    ids = ids(2:end);
+    %% download their full FASTA sequences
+    disp('Downloading sequences of blast hits');
+    divides = find(ids==',');
+    towriteout = '';
+    filenameblast = [acc,'-',num2str(tokeep),'-rawblast.fasta'];
+
+    fid = fopen(filenameblast,'w');
+    stepby = 1:300:(length(divides)-1);
+    if stepby(end)~=(length(divides)-1)
+        stepby(end+1) = (length(divides)-1);
+    end
+    for l = 1:(length(stepby)-1)
+        curids = ids((divides(stepby(l))+1):(divides(stepby(l+1))-1));
+        url = ['http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&rettype=fasta&id=',curids];
+        toadd = urlread(url);
+        nofasta = strfind(toadd,'Supplied id parameter is empty.');
+        if ~isempty(nofasta)
+            toadd = toadd(1:(nofasta(1)-1));
+        end
+        fprintf(fid,toadd);
+    end
+    fclose(fid);
+
 end
-fclose(fid);
+
+
 %% align and such
-disp('Aligning sequences.');
 filenameout = [acc,'-',num2str(tokeep),'-aligned.fasta'];
-[curdir] = fileparts(which(mfilename));
-findspaces = find(curdir == ' ');
-for l = length(findspaces):-1:1
-    curdir = [curdir(1:(findspaces(l)-1)),'\',curdir(findspaces(l):end)];
+if exist(filenameout) == 0
+    disp('Aligning sequences.');
+    [curdir] = fileparts(which(mfilename));
+    findspaces = find(curdir == ' ');
+    for l = length(findspaces):-1:1
+        curdir = [curdir(1:(findspaces(l)-1)),'\',curdir(findspaces(l):end)];
+    end
+    [~,~] = system([curdir,'/clustalo -i ', filenameblast, ' -o ', filenameout]);
 end
-[~,~] = system([curdir,'/clustalo -i ', filenameblast, ' -o ', filenameout]);
+
 %% get msa
 pause(1);
 disp('Generating MSA');

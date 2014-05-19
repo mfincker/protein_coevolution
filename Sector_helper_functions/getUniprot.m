@@ -10,7 +10,11 @@ function [ uniprotID ] = getUniprot( data )
     uniprotID = {};
 
     for i = 1:size(uniprot,2)
-        uniprotID{i} = data.DBReferences(i).dbAccession(1:6);
+    	id = data.DBReferences(i).dbAccession(1:6);
+    	if sum(strcmp(id, uniprotID)) == 0
+        	uniprotID = [uniprotID ; {id}]
+        end
     end
+
 
 end

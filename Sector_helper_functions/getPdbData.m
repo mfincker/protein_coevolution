@@ -2,7 +2,7 @@ function [ pdbStruct ] = getPdbData( pdbId )
 
 	% pdb is a char array containing a pdb id
 	if ischar(pdbId)
-		PDBdirectory = '../PDBfiles/';
+		PDBdirectory = '../../PDBfiles/';
         if (exist(PDBdirectory, 'file') == 7 && ...
         	exist([PDBdirectory pdbId '.pdb'], 'file') == 2)
             pdbStruct = pdbread([PDBdirectory pdbId '.pdb']);

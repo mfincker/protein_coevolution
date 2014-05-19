@@ -1,4 +1,4 @@
-function [msa_kept, seqDistPDB_kept, nCloseSeq, maxDistance] = msa_sort_maeva(pdbID, MSA)
+function [msa_kept, seqDistPDB_kept, nCloseSeq, maxDistance] = msa_sort_maeva(pdbID, MSA, seedseq)
 
     %% Sorting MSA by Similarity to PDB Sequence
     % This function takes in a string of PDB ID, sorts the sequences in the
@@ -23,14 +23,16 @@ function [msa_kept, seqDistPDB_kept, nCloseSeq, maxDistance] = msa_sort_maeva(pd
     % sorting.
 
     %% Get PDB Sequence into a cell from online
-    protein_pdb = getpdb(pdbID);
-    pdb_sequence = cellstr(protein_pdb.Sequence.Sequence);
+    disp('Into msa_sort')
+    pdb_sequence = cellstr(seedseq);
 
     %% Import MSA
     % dirName = sprintf('./prokaryote_MSA/%s-aligned.fasta',pdbID);
 
     msa = MSA;
-    nSeq = length(msa);
+    nSeq = size(msa,1);
+    disp(['MSA size : ' num2str(size(msa))])
+    disp(['Number of seq : ' num2str(nSeq)])
 
     % To use the MSA from  Alex blast2msa directly
     % %% Convert MSA into Cell Array of strings of characters
@@ -72,7 +74,7 @@ function [msa_kept, seqDistPDB_kept, nCloseSeq, maxDistance] = msa_sort_maeva(pd
     I_kept = I(1:size(seqDistPDB_kept,1));
 
     nCloseSeq = size(seqDistPDB_kept,1);
-    msa_kept = msa(I_kept);
+    msa_kept = msa(I_kept,:);
 
     msa_kept = aa2int(msa_kept);
 end
