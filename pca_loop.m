@@ -4,6 +4,7 @@ function [ eigenvector_sector_database, eigenvalue_sector_database] = pca_loop( 
     %pca results for all sectors. 
     
 
+<<<<<<< HEAD
 % to keep track of the  lambdas for each sector.
 
 eigenvector_sector_database = cell(1,length(sectorDatabase))
@@ -18,6 +19,17 @@ eigenvalue_sector_database = cell(1, length(sectorDatabase));
             
         end
     end
+=======
+	% to keep track of the  lambdas for each sector.
+	PCAresults = zeros(3, numel(sectorDatabase)) ;
+	size(PCAresults)
+
+	for i = 1:numel(sectorDatabase)
+	    PCAresults( i, :) = sector_pca( sectorDatabase{i}.Coordinates, 0 )
+	end
+
+	% visualize the data in a meaningful way.
+>>>>>>> FETCH_HEAD
 
 % visualize the data in a meaningful way.
 %eigenvector_sector_database_matrix = cell2mat(eigenvector_sector_database)
