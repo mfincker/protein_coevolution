@@ -1,0 +1,249 @@
+4NEF
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Aquaporins and Glyceroporins
+
+
+1RC2
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Aquaporins and Glyceroporins
+2ABM	2O9D	3NK5
+2O9F	2O9G	2O9E	3NKC	3NKA
+1J4N
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Aquaporins and Glyceroporins
+
+
+2D57
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Aquaporins and Glyceroporins
+2ZZ9
+
+3C02
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Aquaporins and Glyceroporins
+
+
+1FQY
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Aquaporins and Glyceroporins
+1IH5
+
+3D9S
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Aquaporins and Glyceroporins
+
+
+3GD8
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Aquaporins and Glyceroporins
+
+
+1YMG
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Aquaporins and Glyceroporins
+
+
+1SOR
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Aquaporins and Glyceroporins
+2B6O	3M9I
+2B6P
+2B2F
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Amt/Rh proteins
+
+2B2I	2B2H	2B2J
+3HD6
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Amt/Rh proteins
+
+
+3B9Y
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Amt/Rh proteins
+3B9W
+3B9Z
+1U7G
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Amt/Rh proteins
+1XQF	2NMR	2NUU	2NS1
+1U77	1U7C	1XQE	2NOW	2NPE	2NPD	2NPC	2NOP	2NPK	2NPG	2NPJ
+4EV6
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+CorA Superfamily Ion Transporters
+
+4EGW
+3CK6
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+CorA Superfamily Ion Transporters
+
+
+3NVO
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+CorA Superfamily Ion Transporters
+
+3NWI
+2BBJ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+CorA Superfamily Ion Transporters
+2IUB	2HN2	4EEB
+2BBH	4EED
+4EZC
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Urea Transporters
+
+4EZD
+3K3F
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Urea Transporters
+
+3K3G
+3UX4
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Urea Transporters
+
+
+4KLY
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+
+4KNF
+4JQ6
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+
+
+3DDL
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+
+
+1JGJ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+1H68	1H2S	2KSY	3QDC
+3QAP
+1E12
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+
+
+1VGO
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+2EI4
+2Z55
+1XIO
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+2M3G
+
+2BRD
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+1AT9	1AP9	1BRR	1BRX	1QKP	1M0K	1KG8	1QHJ	1C3W	1C8R	3NS0	3T45	4FPD
+1QKO	1M0L	1KG9	1KGB	1C8S	3NSB
+3UG9
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+
+
+4HYJ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+
+
+1UAZ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+
+
+3A7K
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+
+
+2L6X
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+
+
+3AM6
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Bacterial and Algal Rhodopsins
+
+
+3WMN
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Light-Harvesting+Reaction Center Complexes
+
+3WMM
+4M48
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Solute Carrier (SLC) Transporter Superfamily
+
+
+3TIJ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Solute Carrier (SLC) Transporter Superfamily
+
+
+4F35
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Solute Carrier (SLC) Transporter Superfamily
+
+
+1FUM
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Electron Transport Chain Complexes: Complex II
+1L0V
+1KF6	1KFY
+1NEK
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Electron Transport Chain Complexes: Complex II
+2ACZ	2WDQ	2WP9
+1NEN	2WDR	2WDV
+2FBW
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Electron Transport Chain Complexes: Complex II
+2H88
+1YQ3	1YQ4	2H89
+1KQF
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Electron Transport Chain Complexes: Complex II
+
+1KQG
+1ZOY
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Electron Transport Chain Complexes: Complex II
+
+1ZP0
+2BS2
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Electron Transport Chain Complexes: Complex II
+
+1QLB
+1KPL
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+H&lt;sup&gt;+&lt;/sup&gt;/Cl&lt;sup&gt;-&lt;/sup&gt;Exchange Transporters
+
+1KPK
+3ORG
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+H&lt;sup&gt;+&lt;/sup&gt;/Cl&lt;sup&gt;-&lt;/sup&gt;Exchange Transporters
+
+
+3ND0
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+H&lt;sup&gt;+&lt;/sup&gt;/Cl&lt;sup&gt;-&lt;/sup&gt;Exchange Transporters
+
+3Q17
+1OTS
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+H&lt;sup&gt;+&lt;/sup&gt;/Cl&lt;sup&gt;-&lt;/sup&gt;Exchange Transporters
+2EXW	3NMO	4FG6	4ENE	4MQX
+1OTU	1OTT	2EXY	2EZ0	4FTP
+3M9C
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Electron Transport Chain Complexes: Complex I
+3RKO

@@ -11,6 +11,7 @@ data = getPdbData(seqacc);
 % Hack that sequence interest is seq number 1 !!!
 residue_numbers = [1:numel(seedseq)] + data.DBReferences(1).seqBegin - 1 ;
 
+disp([char(9) 'Into miscwrapper']);
 [clusters,extra] = miscwrapper(msa,seedseq,residue_numbers);
 
 end

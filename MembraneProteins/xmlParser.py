@@ -141,6 +141,7 @@ f.close()
 ###############
 
 fall = open('./allMembraneProteinsDB.txt','w')
+funique = open('./uniqueMembraneProteinsDB.txt','w')
 # Group files
 
 groupNames = membraneDB.keys()
@@ -152,6 +153,15 @@ for group in groupNames:
 	for subgroup in subgroupNames:
 		proteinIds = membraneDB[group][subgroup].keys()
 		for ID in proteinIds:
+			
+			if ID in uniqueProteinPdbs:
+				funique.write(membraneDB[group][subgroup][ID]['pdbId'] + '\n')
+				funique.write(group + '\n')
+				funique.write(subgroup + '\n')
+				funique.write('\t'.join(membraneDB[group][subgroup][ID]['memberProteins']) + '\n')
+				funique.write('\t'.join(membraneDB[group][subgroup][ID]['relatedProteins']) + '\n')
+
+
 			fall.write(membraneDB[group][subgroup][ID]['pdbId'] + '\n')
 			fall.write(group + '\n')
 			fall.write(subgroup + '\n')

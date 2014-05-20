@@ -1,5 +1,6 @@
 5/19/14
 
+V1.0
 Hey Leah,
 This is the READ ME to generate your half of the membrane protein sector database.
 
@@ -20,4 +21,11 @@ Run the script. Hopefully, it will work. If it doesn't and you can't troubleshoo
 The script will keep all the fasta files and store them in the MembraneProteins folder, don't erase them ! We might need them later.
 
 If you could try to run this overnight, it will be great to have it by tomorrow.
+
+
+
+
+V2.0
+I have changed the script to loop over the parts of the database for you. So you should be able to stop the script whenever if it's taking too long and you need your computer for something else and we shouldn't loose the sectors from the parts of the database already computed.
+The script has the same name membraneSectorDBScript_Leah.m but it should only run on the unique proteins.
 
