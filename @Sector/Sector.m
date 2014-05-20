@@ -21,6 +21,11 @@ classdef Sector
     	OrganismID
         Membrane
     	EC
+        Group = '';
+        Subgroup = '';
+        MemberProteins = {};
+        RelatedProteins = {};
+
 
     	% Sector sequence properties
     	Length

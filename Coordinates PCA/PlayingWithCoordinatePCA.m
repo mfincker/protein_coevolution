@@ -154,13 +154,13 @@ xlabel('Value'); ylabel('Count');
 
 sumEigenValueDB = sum(eigenValueDB,1);
 sumEigenValueDB = repmat(sumEigenValueDB,3,1);
-eigenValueDB_contribution = eigenValueDB ./ sumEigenValueDB;
+eigenValueDB_contributionRaw = eigenValueDB ./ sumEigenValueDB;
 
-eigenValueDB_cumulContribution = [eigenValueDB_contribution(1,:) ; ...
-			eigenValueDB_contribution(1,:)+eigenValueDB_contribution(2,:) ; ...
-			sum(eigenValueDB_contribution,1)];
+eigenValueDB_cumulContribution = [eigenValueDB_contributionRaw(1,:) ; ...
+			eigenValueDB_contributionRaw(1,:)+eigenValueDB_contributionRaw(2,:) ; ...
+			sum(eigenValueDB_contributionRaw,1)];
 
-group1 = find(eigenValueDB_contribution(1,:) >= 0.9);
+group1 = find(eigenValueDB_contributionRaw(1,:) >= 0.9);
 
 group2 = find(eigenValueDB_cumulContribution(2,:) >= 0.9) ;
 group2 = setdiff(group2, group1);
@@ -200,7 +200,11 @@ end
 membraneGroup = nonzeros(membraneGroup); 
 
 sectorDatabase_membrane = {sectorDatabase{membraneGroup}};
+eigenValueDB_membrane = eigenValueDB(:, membraneGroup);
+
+% Displaying a color coded scatter plot for membrane proteins
 figure
+subplot(3,1,1);
 c = repmat([0.5 0.5 0.5],size(eigenValueDB,2),1);
 c(membraneGroup,:) = repmat([0.75 0 0.75],numel(membraneGroup),1);
 s = scatter3(eigenValueDB(3,:),eigenValueDB(1,:), ...
@@ -211,6 +215,92 @@ title(['Scatter plot of the eigen values of each sector in the database' ...
 xlabel('eigenValue 3');
 ylabel('eigenValue 1');
 zlabel('eigenValue 2');
+
+subplot(3,1,2);
+s = scatter3(eigenValueDB(3,membraneGroup),eigenValueDB(1,membraneGroup), ...
+				eigenValueDB(2,membraneGroup),40, [0.75 0 0.75]);
+
+title(['Scatter plot of the eigen values of each membrane' ...
+			char(10) 'sectors in the database']);
+xlabel('eigenValue 3');
+ylabel('eigenValue 1');
+zlabel('eigenValue 2');
+
+%%
+% Dividing the membraneGroup in 2:
+% - 3 sectors with high eigenValue3
+% - the rest
+[sorted3_eigenValueDB_membrane, permutation] = sortrows(eigenValueDB_membrane', -3);
+sorted3_eigenValueDB_membrane = sorted3_eigenValueDB_membrane';
+membraneGroup_highEig3 = membraneGroup(permutation);
+membraneGroup_highEig3 = membraneGroup_highEig3(1:3);
+
+% Check I got the right ones
+subplot(3,1,3);
+c = repmat([0.75 0 0.75],size(sorted3_eigenValueDB_membrane,2),1);
+c(1:3,:) = repmat([0 0.75 0.75],3,1);
+scatter3(sorted3_eigenValueDB_membrane(3,:),sorted3_eigenValueDB_membrane(1,:), ...
+				sorted3_eigenValueDB_membrane(2,:),40, c);
+
+title('Scatter plot of the eigen values of each membrane sector in the database');
+xlabel('eigenValue 3');
+ylabel('eigenValue 1');
+zlabel('eigenValue 2');
+
+% The 3 high eigenValue 3 sectors are from the same porin pdb:1BH3.
+% It might be that I need to normalize in some way the value of the
+% eigenVectors (but the PCA should have done removed the mean already).
+% But maybe we have to normalize by the size of the original protein somehow.
+
+%%
+% Clustering membrane sectors with k-mean
+opts = statset('Display','final');
+[idx,ctrs] = kmeans(eigenValueDB_membrane', 5, ...
+              'Replicates',1000,'Options',opts);
+
+figure
+plot3(eigenValueDB_membrane(3, idx==1),eigenValueDB_membrane(2, idx==1), ...
+		eigenValueDB_membrane(2,idx==1), 'blue.','MarkerSize',12);
+hold on
+grid on
+plot3(eigenValueDB_membrane(3, idx==2),eigenValueDB_membrane(2, idx==2), ...
+		eigenValueDB_membrane(2,idx==2), 'green.','MarkerSize',12);
+plot3(eigenValueDB_membrane(3, idx==3),eigenValueDB_membrane(2, idx==3), ...
+		eigenValueDB_membrane(2,idx==3), 'red.','MarkerSize',12);
+plot3(eigenValueDB_membrane(3, idx==4),eigenValueDB_membrane(2, idx==4), ...
+		eigenValueDB_membrane(2,idx==4), 'cyan.','MarkerSize',12);
+plot3(eigenValueDB_membrane(3, idx==5),eigenValueDB_membrane(2, idx==5), ...
+		eigenValueDB_membrane(2,idx==5), 'black.','MarkerSize',12);
+
+legend('Cluster 1','Cluster 2','Cluster 3', 'Cluster 4', 'Cluster 5',...
+       'Location','NW');
+hold off
+
+%%
+% Normalized eigenValues
+figure
+scatter3(eigenValueDB_contributionRaw(3,:),eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(2,:));
+title('Scatter plot of the eigen values of each sector in the database')
+xlabel('eigenValue 3');
+ylabel('eigenValue 1');
+zlabel('eigenValue 2');
+
+
+figure
+subplot(1,3,1);
+plot(eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(2,:),'*');
+hold on;
+plot(eigenValueDB_contributionRaw(1,membraneGroup),eigenValueDB_contributionRaw(2,membraneGroup),'r*');
+subplot(1,3,2);
+plot(eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(3,:),'*');
+hold on;
+plot(eigenValueDB_contributionRaw(1,membraneGroup),eigenValueDB_contributionRaw(3,membraneGroup),'r*');
+subplot(1,3,3);
+plot(eigenValueDB_contributionRaw(2,:),eigenValueDB_contributionRaw(3,:),'*');
+hold on;
+plot(eigenValueDB_contributionRaw(2,membraneGroup),eigenValueDB_contributionRaw(3,membraneGroup),'r*');
+
+
 
 
 

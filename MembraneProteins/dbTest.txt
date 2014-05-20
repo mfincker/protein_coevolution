@@ -1,0 +1,14 @@
+2GMH
+MONOTOPIC MEMBRANE PROTEINS
+Oxidoreductases (Monotopic)
+
+2GMJ
+1J79
+MONOTOPIC MEMBRANE PROTEINS
+Dihydroorotate Dehydrogenases (DHODH, class 2)
+1XGE
+
+2PRH
+MONOTOPIC MEMBRANE PROTEINS
+Dihydroorotate Dehydrogenases (DHODH, class 2)
+

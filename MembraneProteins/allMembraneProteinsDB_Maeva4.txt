@@ -1,0 +1,499 @@
+3MKT
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Multi-Drug Efflux Transporters
+
+3MKU
+2DHH
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Multi-Drug Efflux Transporters
+
+
+3OPO
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Multi-Drug Efflux Transporters
+
+
+3AOD
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Multi-Drug Efflux Transporters
+
+
+2ONK
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+2ONS	2ONR
+3B60
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+3B5Z	3B5Y	3B5W	3B5X
+3RLF
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3DHX
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3FH6
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3DHW
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+3DHX
+4KI0
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4M2T
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4M2S
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+2ONS
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+2ONR
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4MRV
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4FI3
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4G1U
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+2QI9
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3QF4
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+1L7V
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+2QI9	4FI3
+
+2R6G
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+3FH6	3PV0	3RLF	4JBW	4KHZ
+3PUZ	3PUY	3PUW	3PUX	3PUV	4KI0
+3B5X
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3B5Y
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3B5Z
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3WME
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+3WMG	3WMF
+4MRR
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3WMG
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3WMF
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4KHZ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3B5W
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4MYC
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+4MYH
+4AYX
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+2HYD
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3ZDQ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4MRN
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+4MRR	4MRV	4MRP	4MRS
+4M1M
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3PV0
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4MRP
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4AYW
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3D31
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3G5U
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+4M1M
+3G61	3G60	4M2S	4M2T
+3FVQ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4F4C
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3G60
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3G61
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4MYH
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4JBW
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3PUZ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3PUX
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3PUY
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3PUV
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+3PUW
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+4AYT
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+4AYX	4AYW	3ZDQ
+4MRS
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+2NQ2
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+ATP Binding Cassette (ABC) Transporters
+
+
+2K1L
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Erythropoietin-Producing Hepatocellular Receptors
+
+2K1K
+2K1K
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Erythropoietin-Producing Hepatocellular Receptors
+
+
+2K9Y
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Erythropoietin-Producing Hepatocellular Receptors
+
+
+4JC7
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+4J7Y
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+2H8A
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+4AL1
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+4AL0
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+4JRZ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+2Q7M
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+2Q7R
+2Q7R
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+3DWW
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+4AL0
+4AL1
+2UUH
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+2UUI
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+4J7T
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+4JCZ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+
+
+2PNO
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Associated Proteins in Eicosanoid and Glutathione Metabolism (MAPEG)
+2UUH	4JCZ
+2UUI	4J7T	4JRZ	4JC7	4J7Y
+2KSD
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Histidine Kinase Receptors
+
+
+2KSE
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Histidine Kinase Receptors
+
+
+2KSF
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Histidine Kinase Receptors
+
+
+4DXW
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3NAF
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3RW0
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3LNM
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3SPJ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3SPH
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3SPI
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3SPG
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3SPC
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3LUT
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3WKV
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3TET
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3RVY
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+4EKW
+3RW0	3RVZ
+4LTQ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+4LTR
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3RVZ
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3T1C
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+3K6N
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+2QKS
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+2X6A
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+2X6B
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+2X6C
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+2A0L
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
+
+4GX5
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Potassium, Sodium, &amp; Proton Ion-Selective
+
