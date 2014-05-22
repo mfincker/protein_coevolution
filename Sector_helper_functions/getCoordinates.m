@@ -16,10 +16,14 @@ function [ coords ] = getCoordinates ( data, ...
 		% calculate the centroid
 		centroids = [];
 		for i = 1:numel(residueInd)
-		    atomCoord = [data.Model.Atom(atomIndex{i}).X ; ...
-		                 data.Model.Atom(atomIndex{i}).Y ; ...
-		                 data.Model.Atom(atomIndex{i}).Z];
-		    centroids = [centroids mean(atomCoord,2)];
+            if isempty(atomIndex{i})
+                atomCoord = [-1 ; -1 ; -1];
+            else
+                atomCoord = [data.Model.Atom(atomIndex{i}).X ; ...
+                             data.Model.Atom(atomIndex{i}).Y ; ...
+                             data.Model.Atom(atomIndex{i}).Z];
+            end
+            centroids = [centroids mean(atomCoord,2)];
 		end
 		coords = centroids;
 	end
