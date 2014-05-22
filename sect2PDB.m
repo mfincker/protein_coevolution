@@ -2,6 +2,10 @@ function [sectorcordxyz, pdbSectorCoords] = sect2PDB(sector_structure)
 % this will overlay the sector centroids onto the PDBid and write an output
 % pdb
 
+
+
+
+
 % call proper PDB from sector_structure
 % pdbtomap = sector_structure.Pdb;
 % pdbMapped = getpdb(pdbtomap);

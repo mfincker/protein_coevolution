@@ -2,12 +2,12 @@
 % text file containing pdbId, group, subgroup, memberProtein and relatedProtein
 % on 5 different lines.
 
-fileList = dir('./uniqueMembraneProteinsDB_Leah*');
+fileList = dir('./splitMembrane_*');
 
 disp(['Number of files: ' num2str(numel(fileList))]);
 for i = 1:numel(fileList)
     disp([char(9) 'Starting file ' num2str(i)]);
-    num = regexp(fileList(i).name, 'uniqueMembraneProteinsDB_Leah(?<nb>\d+).txt','names');
+    num = regexp(fileList(i).name, 'splitMembrane_(?<nb>.+)','names');
     num = num.nb;
 
     membraneSectorDB_Leah = {};
@@ -47,7 +47,7 @@ for i = 1:numel(fileList)
                 sector.Subgroup = subgroup;
                 sector.MemberProteins = memberProteins;
                 sector.RelatedProteins = relatedProteins;
-                membraneSectorDB_Leah = [membraneSectorDB_Leah {Sector(data, clusters{j})}];
+                membraneSectorDB_Leah = [membraneSectorDB_Leah {sector}];
             end
             PDBworking_Leah = [PDBworking_Leah; {pdbId}];
 
@@ -58,9 +58,9 @@ for i = 1:numel(fileList)
         pdbId = fgetl(file);
     end
 
-    save(['./membraneSectorDB_Leah' num2str(num) '.mat'], 'membraneSectorDB_Leah');
-    save(['./membranePDBnotWorking_Leah' num2str(num) '.mat'], 'PDBnotWorking_Leah');
-    save(['./membranePDBWorking_Leah' num2str(num) '.mat'], 'PDBworking_Leah');
+    save(['./membraneSectorDB_Leah_' num '.mat'], 'membraneSectorDB_Leah');
+    save(['./membranePDBnotWorking_Leah_' num '.mat'], 'PDBnotWorking_Leah');
+    save(['./membranePDBWorking_Leah_' num '.mat'], 'PDBworking_Leah');
     clear membraneSectorDB_Leah PDBnotWorking_Leah PDBworking_Leah;
     clc;
 end
