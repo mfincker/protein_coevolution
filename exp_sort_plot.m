@@ -12,8 +12,8 @@ for curr = 1:10
     scatter(linspace(1, nSeq, nSeq), distSort);
     hold on
 end
-xLabel = xlabel('Number of Sequences', 'Fontsize', 16);
-yLabel = ylabel('Distance to PDB Sequence', 'Fontsize', 16);
-Title = title('Distribution of Distances from MSA Sequences to PDB Sequence', 'Fontsize', 18);
+xLabel = xlabel('Number of Sequences', 'Fontsize', 18);
+yLabel = ylabel('Distance to PDB Sequence', 'Fontsize', 18);
+Title = title('Distribution of Distances from MSA Sequences to PDB Sequence', 'Fontsize', 20);
 Legend = legend(names, 'Fontsize', 14); legendTitle = get(Legend, 'title');
 set(legendTitle, 'string', 'PDB ID');
