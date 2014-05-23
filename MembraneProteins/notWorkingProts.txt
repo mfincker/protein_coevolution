@@ -1,0 +1,36 @@
+2YMK
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Adventitious Membrane Proteins: Alpha-helical Pore-forming Toxins.
+
+
+2YEV
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Electron Transport Chain Complexes: Complex IV (Cytochrome C Oxidase)
+
+4HG6
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Celluose Synthases
+
+2JLO
+4A01
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Membrane-Integral Pyrophosphatases (M-PPases)
+
+2VQG
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Outer Membrane Proteins
+
+1PRC
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Photosynthetic Reaction Centers
+2WJN	4CAS
+2WJM
+
+2M6X
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Channels: Other Ion Channels
+
+
+3DZM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
