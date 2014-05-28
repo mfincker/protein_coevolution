@@ -41,11 +41,11 @@ function [eigVect, eigVal, aaEigenBase] = residuePCA ( aaDBcount, ...
 		normAaCount = aaCount - repmat(aaFreq, numSector, 1);
 
 		% Covariance matrix
-		for i=1:nDim
-	    	for j=1:nDim
-	        	cov(i,j) = 1/(numSector-1)*sum(normAaCount(:,i).*normAaCount(:,j));
-	       	end
-	    end
+        for i=1:nDim
+            for j=1:nDim
+                cov(i,j) = 1/(numSector-1)*sum(normAaCount(:,i).*normAaCount(:,j));
+            end
+        end
 
 
 	else
