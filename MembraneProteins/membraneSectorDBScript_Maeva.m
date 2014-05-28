@@ -63,9 +63,9 @@ for i = 1:numel(fileList)
         pdbId = fgetl(file);
     end
 
-    save(['./uMembraneSectorDB_Maeva' num '.mat'], 'membraneSectorDB_Maeva');
-    save(['./uMembranePDBnotWorking_Maeva' num '.mat'], 'PDBnotWorking_Maeva');
-    save(['./uMembranePDBWorking_Maeva' num '.mat'], 'PDBworking_Maeva');
+    save(['./uMembraneSectorDB_Maeva_' num '.mat'], 'membraneSectorDB_Maeva');
+    save(['./uMembranePDBnotWorking_Maeva_' num '.mat'], 'PDBnotWorking_Maeva');
+    save(['./uMembranePDBWorking_Maeva_' num '.mat'], 'PDBworking_Maeva');
     clear membraneSectorDB_Maeva PDBnotWorking_Maeva PDBworking_Maeva;
     clc;
 end
