@@ -8,6 +8,7 @@
 files = dir('*-aligned.fasta');
 file_length = length(files);
 proteins = struct();
+
 for i = 1:file_length
     
     file_names = files(i).name;        
@@ -23,5 +24,6 @@ for i = 1:file_length
         proteins(i).Sheet = temp_protein_pdb.Sheet;
     end
     proteins(i).Name = protein_name;
-
+    %And any additional information we may need or want
+    
 end

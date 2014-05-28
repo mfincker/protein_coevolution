@@ -36,7 +36,7 @@ for i = 1:numel(d)
     
 end
 
-save('uMembraneSizeMSA', 'sizeMSA');
-save('uMembraneSmallMSA', 'smallMSA');
-save('uMembraneMSAerrors', 'errMSA');
+save('new_uMembraneSizeMSA_Leah.mat', 'sizeMSA');
+save('new_uMembraneSmallMSA_Leah.mat', 'smallMSA');
+save('new_uMembraneMSAerrors_Leah.mat', 'errMSA');
     
