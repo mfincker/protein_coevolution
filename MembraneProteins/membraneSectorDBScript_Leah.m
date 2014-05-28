@@ -37,7 +37,7 @@ for i = 1:numel(fileList)
         end
 
         % Generate msa and clusters
-        try
+         try
             [clusters, data] = blast2clust_maeva(pdbId);
             disp(['For' pdbId ': found ', num2str(length(clusters)), ' clusters!']);
 
@@ -62,7 +62,7 @@ for i = 1:numel(fileList)
     save(['./membranePDBnotWorking_Leah_' num '.mat'], 'PDBnotWorking_Leah');
     save(['./membranePDBWorking_Leah_' num '.mat'], 'PDBworking_Leah');
     clear membraneSectorDB_Leah PDBnotWorking_Leah PDBworking_Leah;
-    clc;
+   
 end
 
 
