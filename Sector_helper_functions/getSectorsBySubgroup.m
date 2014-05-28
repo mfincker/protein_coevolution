@@ -1,4 +1,4 @@
-function sectorList = getSectorsBySubgroup(sectorDB, subgroup)
+function [sectorList, indexInSectorDB] = getSectorsBySubgroup(sectorDB, subgroup)
 %GETSECTORSBYSUBGROUP takes a cell array containing a database of sector 
 %and a subgroup name. It returns a cell array containing sectors 
 %whose Subgroup attribute is subgroup.
