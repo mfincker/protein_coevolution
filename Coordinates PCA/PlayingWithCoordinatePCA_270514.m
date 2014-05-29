@@ -19,7 +19,7 @@ groups = getGroup(sectorDatabase);
 subgroups = getSubgroup(sectorDatabase);
 
 [group1, index1] = getSectorsByGroup(sectorDatabase, groups{1});
-[group2, index2] = getSectorsByGroup(sectorDatabase, groups{2
+[group2, index2] = getSectorsByGroup(sectorDatabase, groups{2});
 
 subgroupSectors = {};
 subgroupIndex = {};
@@ -141,18 +141,43 @@ ylabel('eigenValue 1');
 zlabel('eigenValue 2');
 
 
-figure
-subplot(1,3,1);
-plot(eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(2,:),'g*');
-hold on;
-plot(eigenValueDB_contributionRaw(1,index2),eigenValueDB_contributionRaw(2,index2),'r*');
-plot(eigenValueDB_contributionRaw(1,index1),eigenValueDB_contributionRaw(2,index1),'b*');
-subplot(1,3,2);
-plot(eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(3,:),'*');
-subplot(1,3,3);
-plot(eigenValueDB_contributionRaw(2,:),eigenValueDB_contributionRaw(3,:),'*');
+% figure
+% subplot(1,3,1);
+% plot(eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(2,:),'g*');
+% hold on;
+% plot(eigenValueDB_contributionRaw(1,index2),eigenValueDB_contributionRaw(2,index2),'r*');
+% plot(eigenValueDB_contributionRaw(1,index1),eigenValueDB_contributionRaw(2,index1),'b*');
+% subplot(1,3,2);
+% plot(eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(3,:),'*');
+% subplot(1,3,3);
+% plot(eigenValueDB_contributionRaw(2,:),eigenValueDB_contributionRaw(3,:),'*');
 
-
+for i =1:numel(subgroups)
+    figure('Name',subgroups{i});
+    subplot(1,3,1);
+    plot(eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(2,:),'b*');
+    hold on;
+    plot(eigenValueDB_contributionRaw(1,subgroupIndex{i}),eigenValueDB_contributionRaw(2,subgroupIndex{i}),'r*');
+    xlabel('eig1');
+    ylabel('eig2');
+    legend('all membrane proteins',subgroups{i});
+    
+    subplot(1,3,2);
+    plot(eigenValueDB_contributionRaw(1,:),eigenValueDB_contributionRaw(3,:),'*');
+    hold on
+    plot(eigenValueDB_contributionRaw(1,subgroupIndex{i}),eigenValueDB_contributionRaw(3,subgroupIndex{i}),'r*');
+    xlabel('eig1');
+    ylabel('eig3');
+    legend('all membrane proteins',subgroups{i});
+    
+    subplot(1,3,3);
+    plot(eigenValueDB_contributionRaw(2,:),eigenValueDB_contributionRaw(3,:),'*');
+    hold on
+    plot(eigenValueDB_contributionRaw(2,subgroupIndex{i}),eigenValueDB_contributionRaw(3,subgroupIndex{i}),'r*');
+    xlabel('eig2');
+    ylabel('eig3');
+    legend('all membrane proteins',subgroups{i});
+end
 
 
 
