@@ -29,13 +29,16 @@ end
 
 %% Trim Columns not going to be used
 % Column 1-4, 6, 8-16, 22, 27-30, 36-65
+new_somatic_mutation_trim = cell(length(somatic_mutation_trim),17);
 somatic_mutation_trim = somatic_mutation_trim(:,[5 7 17:21 23:26 31:35]);
+new_somatic_mutation_trim(:,1:16) = somatic_mutation_trim;
+new_somatic_mutation_trim{1,17} = 'Sector number':
 %% Overall Sector Enrichment
 
 inSectorCount= zeros(1,7);
 outSectorCount = 0;
 
-for i=1:length(somatic_mutation_trim)
+for i=2:length(somatic_mutation_trim)
     %I changed the somatic index accession from 7 to 2 to reflect our new trimmed
     %matrix. This is because the mutations are in a new column
     cluster_index = is_in_sector(TP53_clusters, cell2mat(somatic_mutation_trim(i,2))); 
@@ -49,6 +52,7 @@ for i=1:length(somatic_mutation_trim)
         mutation_out_sector(outSectorCount + 1,:) = somatic_mutation_trim(i,:);
         outSectorCount = outSectorCount + 1;
     end
+    somatic_mutation_trim(i, 17) = cluster_index;
 end
 
 %% Relative Sector Enrichment
@@ -57,7 +61,7 @@ Sector_enrichment = zeros(length(TP53_clusters),1);
 for j = 1:length(TP53_clusters)
 Sector_enrichment(j,1) = (inSectorCount(1,j)./length(somatic_mutation_trim(:,2)))./(length(cell2mat(TP53_clusters(1,j)))./391);
 end
-scatter(1:length(Sector_enrichment),Sector_enrichment,'c');
+plot(1:length(Sector_enrichment),Sector_enrichment,'r');
 title('Mutation enrichment per sector');
 xlabel('Sector number');
 ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/totalresidues)');
@@ -65,3 +69,9 @@ ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/t
 %% Compensatory mutations
 % 
 
+
+
+
+
+%%
+%% Map to pdb
