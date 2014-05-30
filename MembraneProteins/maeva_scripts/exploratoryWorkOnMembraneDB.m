@@ -3,7 +3,7 @@
 clc; close all;
 
 % Importing the database
-DB = importdata('../MembraneSectorDB/membraneSectorDB_053014_forPCA.mat'); 
+DB = importdata('../MembraneSectorDB/membraneSectorDB_053014_forCoord.mat'); 
 
 %% Some statistics about the database:
 
