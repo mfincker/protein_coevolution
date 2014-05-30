@@ -1,8 +1,11 @@
-%% Load Data
+%% Load Data 
 %%
 % Get Cluster Data
 %[TP53_clusters, TP53_extra] = blast2clust('BAC16799');
-
+load('clusters.mat');
+%
+%[TP53_clusters, TP53_extra] = msa2clust(msa);
+TP53_clusters = clusters;
 %%
 % Read Functional Assessment Data
 function_assess_raw = importdata('functionalAssessmentIARC TP53 Database, R17.txt');
@@ -29,10 +32,8 @@ end
 
 %% Trim Columns not going to be used
 % Column 1-4, 6, 8-16, 22, 27-30, 36-65
-new_somatic_mutation_trim = cell(length(somatic_mutation_trim),17);
-somatic_mutation_trim = somatic_mutation_trim(:,[5 7 17:21 23:26 31:35]);
-new_somatic_mutation_trim(:,1:16) = somatic_mutation_trim;
-new_somatic_mutation_trim{1,17} = 'Sector number':
+somatic_mutation_trim = somatic_mutation_trim(:,[5 7 17:21 23:26 31:35 65]);
+ 
 %% Overall Sector Enrichment
 
 inSectorCount= zeros(1,7);
@@ -52,7 +53,7 @@ for i=2:length(somatic_mutation_trim)
         mutation_out_sector(outSectorCount + 1,:) = somatic_mutation_trim(i,:);
         outSectorCount = outSectorCount + 1;
     end
-    somatic_mutation_trim(i, 17) = cluster_index;
+    somatic_mutation_trim{i, 17} = cluster_index;
 end
 
 %% Relative Sector Enrichment
@@ -75,3 +76,4 @@ ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/t
 
 %%
 %% Map to pdb
+%pdb is 3Q05
