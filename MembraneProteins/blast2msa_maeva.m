@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+function [msa,seedseq,residue_numbers] = blast2msa(seqacc,varargin) 
+=======
 function [msa,seedseq,residue_numbers] = blast2msa_maeva(seqacc,varargin) 
+>>>>>>> FETCH_HEAD
 % BLAST2MSA     This function returns a multiple sequence alignment given a
 %               sequence or accession number.  A second argument sets the
 %               numebr of sequences to return (default 500). A third
@@ -112,6 +116,15 @@ function [msa,seedseq,residue_numbers] = blast2msa_maeva(seqacc,varargin)
     % To work with Brad function
     % msa = aa2int(msa);
 
+<<<<<<< HEAD
+%% clean up if necessary
+disp('Cleaning up!');
+if ~keepfile
+    delete(filenameout);
+    delete(filenameblast);
+end
+%% Done
+=======
     %% clean up if necessary
     disp('Cleaning up!');
     if ~keepfile
@@ -121,3 +134,4 @@ function [msa,seedseq,residue_numbers] = blast2msa_maeva(seqacc,varargin)
     %% Done
     disp('Done!');
 end
+>>>>>>> FETCH_HEAD
