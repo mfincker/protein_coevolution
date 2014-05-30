@@ -34,3 +34,8 @@ Channels: Other Ion Channels
 3DZM
 TRANSMEMBRANE PROTEINS: BETA-BARREL
 Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+2YMK
+TRANSMEMBRANE PROTEINS: ALPHA-HELICAL
+Adventitious Membrane Proteins: Alpha-helical Pore-forming Toxins.
+
