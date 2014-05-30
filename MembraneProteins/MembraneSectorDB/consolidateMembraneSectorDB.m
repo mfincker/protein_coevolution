@@ -24,7 +24,7 @@ undefined_index = [];
 for k = 1:numel(membraneSectorDB)
     if strcmp(membraneSectorDB{k}.Sequence, 'undefined') == 1
         membraneSectorDB_undefined = [membraneSectorDB_undefined membraneSectorDB(k)];
-        undefined_index = [undefined_index k]
+        undefined_index = [undefined_index k];
     end
 end
 membraneSectorDB(undefined_index) = [];
@@ -50,9 +50,31 @@ for m = 1:numel(small_M)
     membraneSectorDB(index) = [];
 end
 
+% % Remove residue with no coordinate and empty sectors
+% empty = [];
+% for i = 1:numel(membraneSectorDB)
+%     index = [];
+%     for residue = 1:membraneSectorDB{i}.Length
+%         if sum(membraneSectorDB{i}.Coordinates(:,residue))/3 == -1
+%             index = [index residue];
+%         end
+%     end
+%     membraneSectorDB{i}.ResidueIndexes(index) = [];
+%     membraneSectorDB{i}.Coordinates(:,index) = [];
+%     membraneSectorDB{i}.Sequence(index) = [];
+%     membraneSectorDB{i}.Length = numel(membraneSectorDB{i}.ResidueIndexes);
+%     
+%     if membraneSectorDB{i}.Length <= 1
+%         empty = [empty i];
+%     end
+% end
+% 
+% membraneSectorDB(empty) = [];
 
 
-save('membraneSectorDB_052914.mat', 'membraneSectorDB'); 
+
+
+save('membraneSectorDB_053014_forAA.mat', 'membraneSectorDB'); 
 
 
 
