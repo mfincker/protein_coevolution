@@ -68,20 +68,17 @@ xlabel('Sector number', 'FontSize', 18);
 ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/totalresidues)');
 
 %% Compensatory mutations
-<<<<<<< HEAD
+
 % Extract the residues in the MSA corresponding to the reference sequence.
-map = find(msa(1,:) ~= 25);
-seqmsa = msa(:,map);
-=======
+
+
 % First we will look at each mutation at each residue within a sector
 % across species to find "fixed" mutations. In order to do this we must
 % make a map of all the residues in p53 to compare all of the other
 % sequences to.
-map_human_p53 = find(msa(1,:)~=25);
 
 
 
->>>>>>> FETCH_HEAD
 
 %%
 % Find the maximum size of cluster to facilitate setting up the MSA of
