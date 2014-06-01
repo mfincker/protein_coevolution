@@ -105,6 +105,17 @@ for i=1:length(TP53_clusters)
 end
 
 %%
+%% Phenotypic enrichment for each sector
+%This section is meant to find the number of different phenotypes expressed
+%in each sector, and the relative enrichment of each phenotype within each
+%sector.
+
+
+
+
+
+
+
 %% Map to pdb
 %pdb is 3Q05
 
