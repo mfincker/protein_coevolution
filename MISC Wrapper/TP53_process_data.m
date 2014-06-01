@@ -205,11 +205,25 @@ for i=1:length(clust_mutation)
     mut_msa = clust_msa(:,msa_mut_index);
     mut_msa_map = find(mut_msa(:,1) == mut_aa);
     mut_seqs = clust_msa(mut_msa_map,:);
-    clust_mutation{i,5} = {length(mut_seqs)};
-    clust_mutation{i,5} = {mut_seqs};
+    clust_mutation_cell{i,5} = length(mut_seqs(:,1));
+    clust_mutation_cell{i,6} = mut_seqs;
 end
 
 %%
+% Plot the number of carcinogenic mutations present in other species in the
+% MSA.
+for i=1:length(TP53_clusters)
+    subplot(2,3,i);
+    clust_mut_i = find(cell2mat(clust_mutation_cell(:,4)) == i);
+    x_mutIndex = cell2mat(clust_mutation_cell(clust_mut_i,1));
+    y_mutCount = cell2mat(clust_mutation_cell(clust_mut_i,5));
+    scatter(x_mutIndex, y_mutCount, 35, 'filled');
+    xlabel('Index of Carcinogenic Mutation', 'FontSize', 18);
+    titleStr = sprintf('Sector %d', i);
+    title(titleStr, 'FontSize', 20);
+    ylabel('No. of Seqs with Mutation', 'FontSize', 18);
+end
+
 %% Phenotypic enrichment for each sector
 %This section is meant to find the number of different phenotypes expressed
 %in each sector, and the relative enrichment of each phenotype within each
