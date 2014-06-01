@@ -22,7 +22,7 @@ for i=1:length(somatic_mutation_raw)
     if ~strcmp(somatic_mutation_raw(i,20),somatic_mutation_raw(i,21)) 
         
         if ~strcmp(somatic_mutation_raw(i,20),'NA') || ~strcmp(somatic_mutation_raw(i,21),'NA')
-            if ~ischar(somatic_mutation_raw{i,7}) && somatic_mutation_raw{i,7} <= 391
+            if ~ischar(somatic_mutation_raw{i,7}) && somatic_mutation_raw{i,7} <= 393
             somatic_mutation_trim(mut_count,:) = somatic_mutation_raw(i,:);
             mut_count = mut_count + 1;
             end
@@ -33,6 +33,7 @@ end
 %% Trim Columns not going to be used
 % Column 1-4, 6, 8-16, 22, 27-30, 36-65
 somatic_mutation_trim = somatic_mutation_trim(:,[5 7 17:21 23:26 31:35 65]);
+
 %% Overall Sector Enrichment
 
 inSectorCount= zeros(1,7);
@@ -69,27 +70,16 @@ xlabel('Sector number', 'FontSize', 18);
 ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/totalresidues)');
 
 %% Compensatory mutations
-
-
-% Extract the residues in the MSA corresponding to the reference sequence.
-
-
-
+%
 % First we will look at each mutation at each residue within a sector
 % across species to find "fixed" mutations. In order to do this we must
 % make a map of all the residues in p53 to compare all of the other
 % sequences to.
-
-
-
-
-
 %%
 % Extract the residues in the MSA corresponding to the reference sequence.
 
 map = find(msa(1,:) ~= 25);
 seqmsa = msa(:,map);
-
 
 %%
 % Find the maximum size of cluster to facilitate setting up the MSA of
@@ -137,29 +127,44 @@ for i=1:length(clust_mutation_cell)
         clust_mutation(mut_count,1) = cell2mat(clust_mutation_cell(i,1));
         clust_mutation(mut_count,4) = cell2mat(clust_mutation_cell(i,4));
         for aa = 2:3 % WT AA and MT AA
-            if (length(clust_mutation_cell{i,aa}) <=4)
-                if (strcmp(clust_mutation_cell(i,aa), 'NA'))
-                     % deletion causing gaps
-                    clust_mutation(mut_count,aa) = aa2int('-');
-                elseif (strcmp(clust_mutation_cell(i,aa), 'STOP'))
-                     % translation stop, * in MATLAB
-                    clust_mutation(mut_count,aa) = aa2int('*');
-                else
-                    AminoAcid = aminolookup('Abbreviation', clust_mutation_cell{i,aa});
-                    oneLetterCode = AminoAcid(1,1);
-                    clust_mutation(mut_count,aa) = aa2int(AminoAcid(1,1));
-                end
-            else
-                clust_mutation(mut_count,aa) = 0; 
+            if (strcmp(clust_mutation_cell(i,aa), 'NA'))
+                 % deletion causing gaps
+                clust_mutation(mut_count,aa) = aa2int('-');
+            elseif (strcmp(clust_mutation_cell(i,aa), 'STOP'))
+                 % translation stop, * in MATLAB
+                clust_mutation(mut_count,aa) = aa2int('*');
+            else % substitution
+                AminoAcid = aminolookup('Abbreviation', clust_mutation_cell{i,aa});
+                oneLetterCode = AminoAcid(1,1);
+                clust_mutation(mut_count,aa) = aa2int(AminoAcid(1,1));
             end
         end
         mut_count = mut_count + 1;
     end
 end
 clust_mutation = unique(clust_mutation, 'rows');
+
 %%
 % The actual part of finding compensatory mutation. First, we look at each
-% mutation in the mutation database, and 
+% mutation in the mutation database, and count the frequencies of each
+% carcinogenic mutation in species other than human beings. The fifth
+% column ot clust_mutation is added in this sections, and it contains the
+% sequences in clustMSA with the given mutation.
+clust_mutation_cell = num2cell(clust_mutation);
+%%
+
+for i=1:length(clust_mutation)
+    mut_index = clust_mutation(i,1); % index of mutation residue
+    mut_aa = clust_mutation(i,3); % mutant AA
+    clust_index = clust_mutation(i,4); % index of cluster the mutation is in
+    clust_msa = clustMSA(:,:,clust_index);
+    msa_mut_index = find(clust_msa(1,:) == mut_index);
+    mut_msa = clust_msa(:,msa_mut_index);
+    mut_msa_map = find(mut_msa(:,1) == mut_aa);
+    mut_seqs = clust_msa(mut_msa_map,:);
+    clust_mutation{i,5} = {length(mut_seqs)};
+    clust_mutation{i,5} = {mut_seqs};
+end
 
 %%
 %% Phenotypic enrichment for each sector
