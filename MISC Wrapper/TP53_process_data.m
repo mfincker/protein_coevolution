@@ -59,6 +59,7 @@ somatic_mutations_only_in_sectors = somatic_mutation_trim(mutations_and_what_sec
 
 %% Relative Sector Enrichment
 % For each sector
+figure
 Sector_enrichment = zeros(length(TP53_clusters),1);
 for j = 1:length(TP53_clusters)
 Sector_enrichment(j,1) = (inSectorCount(1,j)./length(somatic_mutation_trim(:,2)))./(length(cell2mat(TP53_clusters(1,j)))./393);
@@ -157,6 +158,28 @@ for i=1:length(clust_mutation_cell)
     end
 end
 clust_mutation = unique(clust_mutation, 'rows');
+
+
+%% Create trimmed database of unique mutations for each residue
+unique_mutations = somatic_mutation_trim(:,[2,6,7,17]);
+for i = 1:length(unique_mutations(:,1))
+    for j = 1:length(unique_mutations(1,:))
+        if isa(unique_mutations{i,j},'double')
+            unique_mutations{i,j} = num2str(unique_mutations{i,j});
+        end
+        unique_mutations(i,j) = cellstr(unique_mutations(i,j));
+    end
+end
+unique_mutations_new = unique(unique_mutations,'rows');
+
+
+
+
+% figure
+% New_Sector_enrichment = zeros(length(TP53_clusters),1);
+% for j = 1:length(TP53_clusters)
+% New_Sector_enrichment(j,1) = (length(find(clust_mutation(:,4)==j))./length(clust_mutation(:,4)))./(length(cell2mat(TP53_clusters(1,j)))./393);
+% end
 %%
 % The actual part of finding compensatory mutation. First, we look at each
 % mutation in the mutation database, and 
