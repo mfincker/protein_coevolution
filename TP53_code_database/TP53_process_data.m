@@ -65,7 +65,7 @@ Sector_enrichment = zeros(length(TP53_clusters),1);
 for j = 1:length(TP53_clusters)
 Sector_enrichment(j,1) = (inSectorCount(1,j)./length(somatic_mutation_trim(:,2)))./(length(cell2mat(TP53_clusters(1,j)))./393);
 end
-bar(1:length(Sector_enrichment),Sector_enrichment,'r');
+bar(1:length(Sector_enrichment),Sector_enrichment,'b');
 title('Mutation enrichment per sector', 'FontSize', 20);
 xlabel('Sector number', 'FontSize', 18);
 ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/totalresidues)');
