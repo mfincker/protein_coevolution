@@ -33,7 +33,6 @@ end
 %% Trim Columns not going to be used
 % Column 1-4, 6, 8-16, 22, 27-30, 36-65
 somatic_mutation_trim = somatic_mutation_trim(:,[5 7 17:21 23:26 31:35 65]);
- 
 %% Overall Sector Enrichment
 
 inSectorCount= zeros(1,7);
@@ -114,6 +113,55 @@ for i=1:length(TP53_clusters)
 end
 
 %%
+% Extract the mutations in the clusters. For somatic_mutation_trim, the
+% columns are
+%%
+% 2: indices of reference sequence
+%%
+% 6: wildtype AA
+%%
+% 7: mutant AA
+%%
+% 17: the index of the cluster the mutation is in
+%%
+% We also have to convert the three letter amino acid codes to the integer
+% representation in MATLAB..
+clust_mut_map = find(cell2mat(somatic_mutation_trim(:,17)));
+clust_mutation_cell = somatic_mutation_trim(clust_mut_map,[2 6 7 17]);
+
+mut_count = 1;
+for i=1:length(clust_mutation_cell)
+    % only consider deletion, substitution and premature stops, since there
+    % are mutation from 1 AA to 2 AA or other peculiar ones in the database
+    if (length(clust_mutation_cell{i,2}) <=4 && length(clust_mutation_cell{i,3}) <=4)
+        clust_mutation(mut_count,1) = cell2mat(clust_mutation_cell(i,1));
+        clust_mutation(mut_count,4) = cell2mat(clust_mutation_cell(i,4));
+        for aa = 2:3 % WT AA and MT AA
+            if (length(clust_mutation_cell{i,aa}) <=4)
+                if (strcmp(clust_mutation_cell(i,aa), 'NA'))
+                     % deletion causing gaps
+                    clust_mutation(mut_count,aa) = aa2int('-');
+                elseif (strcmp(clust_mutation_cell(i,aa), 'STOP'))
+                     % translation stop, * in MATLAB
+                    clust_mutation(mut_count,aa) = aa2int('*');
+                else
+                    AminoAcid = aminolookup('Abbreviation', clust_mutation_cell{i,aa});
+                    oneLetterCode = AminoAcid(1,1);
+                    clust_mutation(mut_count,aa) = aa2int(AminoAcid(1,1));
+                end
+            else
+                clust_mutation(mut_count,aa) = 0; 
+            end
+        end
+        mut_count = mut_count + 1;
+    end
+end
+clust_mutation = unique(clust_mutation, 'rows');
+%%
+% The actual part of finding compensatory mutation. First, we look at each
+% mutation in the mutation database, and 
+
+%%
 %% Phenotypic enrichment for each sector
 %This section is meant to find the number of different phenotypes expressed
 %in each sector, and the relative enrichment of each phenotype within each
@@ -127,5 +175,3 @@ end
 
 %% Map to pdb
 %pdb is 3Q05
-
-
