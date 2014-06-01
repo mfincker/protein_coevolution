@@ -60,7 +60,7 @@ end
 % For each sector
 Sector_enrichment = zeros(length(TP53_clusters),1);
 for j = 1:length(TP53_clusters)
-Sector_enrichment(j,1) = (inSectorCount(1,j)./length(somatic_mutation_trim(:,2)))./(length(cell2mat(TP53_clusters(1,j)))./391);
+Sector_enrichment(j,1) = (inSectorCount(1,j)./length(somatic_mutation_trim(:,2)))./(length(cell2mat(TP53_clusters(1,j)))./393);
 end
 plot(1:length(Sector_enrichment),Sector_enrichment,'r');
 title('Mutation enrichment per sector');
@@ -68,7 +68,11 @@ xlabel('Sector number');
 ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/totalresidues)');
 
 %% Compensatory mutations
-% 
+% First we will look at each mutation at each residue within a sector
+% across species to find "fixed" mutations. In order to do this we must
+% make a map of all the residues in p53 to compare all of the other
+% sequences to.
+map_human_p53 = find(msa(1,:)~=25);
 
 
 
@@ -77,3 +81,5 @@ ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/t
 %%
 %% Map to pdb
 %pdb is 3Q05
+
+
