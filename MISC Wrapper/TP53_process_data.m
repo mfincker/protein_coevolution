@@ -55,6 +55,8 @@ for i=1:length(somatic_mutation_trim)
     end
     somatic_mutation_trim{i, 17} = cluster_index;
 end
+mutations_and_what_sectors_theyarein = find(cell2mat(somatic_mutation_trim(2:end,17))>0);
+somatic_mutations_only_in_sectors = somatic_mutation_trim(mutations_and_what_sectors_theyarein + 1,:);
 
 %% Relative Sector Enrichment
 % For each sector
@@ -69,7 +71,9 @@ ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/t
 
 %% Compensatory mutations
 
+
 % Extract the residues in the MSA corresponding to the reference sequence.
+
 
 
 % First we will look at each mutation at each residue within a sector
@@ -78,6 +82,14 @@ ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/t
 % sequences to.
 
 
+
+
+
+%%
+% Extract the residues in the MSA corresponding to the reference sequence.
+
+map = find(msa(1,:) ~= 25);
+seqmsa = msa(:,map);
 
 
 %%
