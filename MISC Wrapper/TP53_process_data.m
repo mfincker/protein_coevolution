@@ -201,10 +201,14 @@ for i=1:length(clust_mutation)
     mut_aa = clust_mutation(i,3); % mutant AA
     clust_index = clust_mutation(i,4); % index of cluster the mutation is in
     clust_msa = clustMSA(:,:,clust_index);
-    msa_mut_index = find(clust_msa(1,:) == mut_index);
+    % index of the current mutation in the cluster's MSA
+    msa_mut_index = find(clust_msa(1,:) == mut_index); 
+    % the residues in each sequence at the mutation index
     mut_msa = clust_msa(:,msa_mut_index);
+    % find the sequences with the current mutation 
     mut_msa_map = find(mut_msa(:,1) == mut_aa);
     mut_seqs = clust_msa(mut_msa_map,:);
+    % store the information as cells
     clust_mutation_cell{i,5} = length(mut_seqs(:,1));
     clust_mutation_cell{i,6} = mut_seqs;
 end
@@ -223,6 +227,24 @@ for i=1:length(TP53_clusters)
     title(titleStr, 'FontSize', 20);
     ylabel('No. of Seqs with Mutation', 'FontSize', 18);
 end
+
+%%
+% From the above graph, we can see that there is one mutation in cluster 3
+% that exists in most of the sequences in the MSA. We extract the MSA of
+% the sequences with this mutation, and visualize it using imagesc.
+max_mut_count_index = find(cell2mat(clust_mutation_cell(:,5))==max(cell2mat(clust_mutation_cell(:,5))));
+max_mut_clust_index = cell2mat(clust_mutation_cell(max_mut_count_index,4));
+max_mut_msa = vertcat(clustMSA(:,:,max_mut_clust_index));
+% set up MSA so that top 1/3 of the image would be the reference sequence
+max_mut_msa = max_mut_msa(2:length(max_mut_msa),1:length(cell2mat(TP53_clusters(1,max_mut_clust_index))));
+max_mut_msa = vertcat(repmat(max_mut_msa(1,:),length(max_mut_msa)/2,1),max_mut_msa);
+imagesc(max_mut_msa);
+xlabel('Residues in Cluster 3', 'FontSize', 18);
+ylabel('Sequences with Mutation and Reference Sequence', 'FontSize', 18);
+title('Cluster MSA of Sequences', 'FontSize', 20);
+xticks = linspace(1,length(max_mut_msa(1,:)), length(max_mut_msa(1,:)));
+set(gca, 'XTick', xticks, 'XTickLabel', xticks);
+set(gca, 'YTick', [], 'YTickLabel', []);
 
 %% Phenotypic enrichment for each sector
 %This section is meant to find the number of different phenotypes expressed
