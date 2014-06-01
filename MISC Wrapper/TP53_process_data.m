@@ -39,7 +39,7 @@ somatic_mutation_trim = somatic_mutation_trim(:,[5 7 17:21 23:26 31:35 65]);
 inSectorCount= zeros(1,7);
 outSectorCount = 0;
 
-for i=2:length(somatic_mutation_trim)
+for i=1:length(somatic_mutation_trim)
     %I changed the somatic index accession from 7 to 2 to reflect our new trimmed
     %matrix. This is because the mutations are in a new column
     cluster_index = is_in_sector(TP53_clusters, cell2mat(somatic_mutation_trim(i,2))); 
@@ -62,17 +62,36 @@ Sector_enrichment = zeros(length(TP53_clusters),1);
 for j = 1:length(TP53_clusters)
 Sector_enrichment(j,1) = (inSectorCount(1,j)./length(somatic_mutation_trim(:,2)))./(length(cell2mat(TP53_clusters(1,j)))./391);
 end
-plot(1:length(Sector_enrichment),Sector_enrichment,'r');
-title('Mutation enrichment per sector');
-xlabel('Sector number');
+bar(1:length(Sector_enrichment),Sector_enrichment,'r');
+title('Mutation enrichment per sector', 'FontSize', 20);
+xlabel('Sector number', 'FontSize', 18);
 ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/totalresidues)');
 
 %% Compensatory mutations
-% 
+% Extract the residues in the MSA corresponding to the reference sequence.
+map = find(msa(1,:) ~= 25);
+seqmsa = msa(:,map);
 
-
-
-
+%%
+% Find the maximum size of cluster to facilitate setting up the MSA of
+% clusters.
+maxResidue_clust = 0;
+for i=1:length(TP53_clusters)
+    if (length(cell2mat(TP53_clusters(1,i))) > maxResidue_clust)
+        maxResidue_clust = length(cell2mat(TP53_clusters(1,i)));
+    end
+end
+%%
+% Store the msa of the reference sequence into each cluster. The data is
+% stored in a 3D matrix, with each layer containing the indices of the 
+% clustered residues in the reference sequence and the MSA corresponding to
+% those indices.
+clustMSA = zeros(length(seqmsa)+1, maxResidue_clust, length(TP53_clusters));
+for i=1:length(TP53_clusters)
+    clust_index = cell2mat(TP53_clusters(1,i)); % indices of ref sequence
+    clustMSA(1,1:length(clust_index),i) = clust_index;
+    clustMSA(2:length(clustMSA),1:length(clust_index),i) = seqmsa(:,clust_index);
+end
 
 %%
 %% Map to pdb
