@@ -145,14 +145,33 @@ for i=1:length(clust_mutation_cell)
 end
 clust_mutation = unique(clust_mutation, 'rows');
 
-<<<<<<< HEAD
+
 
 %% Create trimmed database of unique mutations for each residue
-unique_mutations = somatic_mutation_trim(:,[2,6,7,17]);
-for i = 1:length(unique_mutations(:,1))
+unique_mutations_cell = somatic_mutation_trim(:,[2,6,7,17]);
+mut_count = 1;
+for i = 1:length(unique_mutations_cell(:,1))
     for j = 1:length(unique_mutations(1,:))
         if isa(unique_mutations{i,j},'double')
             unique_mutations{i,j} = num2str(unique_mutations{i,j});
+        end
+        if (length(unique_mutations_cell{i,2}) <=4 && length(unique_mutations_cell{i,3}) <=4)
+        unique_mutations(mut_count,1) = cell2mat(unique_mutations_cell(i,1));
+        unique_mutations(mut_count,4) = cell2mat(unique_mutations_cell(i,4));
+            for aa = 2:3 % WT AA and MT AA
+                if (strcmp(unique_mutations_cell(i,aa), 'NA'))
+                     % deletion causing gaps
+                    unique_mutations(mut_count,aa) = aa2int('-');
+                elseif (strcmp(unique_mutations_cell(i,aa), 'STOP'))
+                     % translation stop, * in MATLAB
+                    unique_mutations(mut_count,aa) = aa2int('*');
+                else % substitution
+                    AminoAcid = aminolookup('Abbreviation', unique_mutations_cell{i,aa});
+                    oneLetterCode = AminoAcid(1,1);
+                    unique_mutations(mut_count,aa) = aa2int(AminoAcid(1,1));
+                end
+            end
+        mut_count = mut_count + 1;
         end
         unique_mutations(i,j) = cellstr(unique_mutations(i,j));
     end
@@ -167,8 +186,7 @@ unique_mutations_new = unique(unique_mutations,'rows');
 % for j = 1:length(TP53_clusters)
 % New_Sector_enrichment(j,1) = (length(find(clust_mutation(:,4)==j))./length(clust_mutation(:,4)))./(length(cell2mat(TP53_clusters(1,j)))./393);
 % end
-=======
->>>>>>> FETCH_HEAD
+
 %%
 % The actual part of finding compensatory mutation. First, we look at each
 % mutation in the mutation database, and count the frequencies of each
