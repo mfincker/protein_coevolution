@@ -46,6 +46,47 @@ function [eigVect, eigVal, aaEigenBase] = residuePCA ( aaDBcount, ...
                 cov(i,j) = 1/(numSector-1)*sum(normAaCount(:,i).*normAaCount(:,j));
             end
         end
+        
+        	elseif normalize == 3
+		% Transpose to have aa as column and
+		% sectors as row
+		aaCount = aaDBcount';
+
+		% Frequency of amino acid from sector DB
+		aaFreq = [  0.0814;
+                    0.0432;
+                    0.0478;
+                    0.0507;
+                    0.0098;
+                    0.0378;
+                    0.0460;
+                    0.0882;
+                    0.0165;
+                    0.0609;
+                    0.1000;
+                    0.0455;
+                    0.0228;
+                    0.0539;
+                    0.0379;
+                    0.0649;
+                    0.0578;
+                    0.0210;
+                    0.0425;
+                    0.0706]';
+
+		% Degree of freedom (nDim) and number of sectors
+		[numSector, nDim] = size(aaCount);
+
+		% Normalizing by removing the average frequenc of
+		% amino acids in uniprot
+		normAaCount = aaCount - repmat(aaFreq, numSector, 1);
+
+		% Covariance matrix
+        for i=1:nDim
+            for j=1:nDim
+                cov(i,j) = 1/(numSector-1)*sum(normAaCount(:,i).*normAaCount(:,j));
+            end
+        end
 
 
 	else
