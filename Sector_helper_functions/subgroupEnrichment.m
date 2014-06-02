@@ -11,6 +11,7 @@ sectorbyProt = separateSectorsByProtien(sectorDB);
 enrichment = zeros(20, length(sectorbyProt));
 allrescount = zeros(1, length(sectorbyProt));
 
+% get all the enrichments for the proteins in a given subgroup
 for i= 1:length(sectorbyProt)
     [currentenrichment, numresidues] = proteinEnrichment(sectorbyProt{i});
     allrescount(i) = numresidues;
@@ -20,7 +21,8 @@ end
 
 enrichment(:, allrescount<0) = [ ];
 
-% avg enrichment per subgroup
+% avg enrichment per subgroup this will allow for us to compress the data
+% for average enrichment per subgroup. 
 medianenrichment = median(enrichment,2);
 % plot
 
