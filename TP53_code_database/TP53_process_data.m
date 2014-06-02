@@ -6,6 +6,12 @@ load('clusters.mat');
 %
 %[TP53_clusters, TP53_extra] = msa2clust(msa);
 TP53_clusters = clusters;
+
+%% Visualize MSA
+imagesc(msa);
+title('MSA of Homo Sapien p53 Sequences', 'FontSize', 20);
+ylabel('No. of Sequences', 'FontSize', 18);
+xlabel('Residue Index', 'FontSize', 18);
 %%
 % Read Functional Assessment Data
 function_assess_raw = importdata('functionalAssessmentIARC TP53 Database, R17.txt');
