@@ -120,40 +120,6 @@ end
 save('transmembraneSectorCell.mat', 'transmembraneSectorCell');
 
 
-%%
-% Percentage of the aa in sectors in the transmembrane region:
-aaInTrans = 0;
-aaInSector = 0;
-percentInTransPerSector = zeros(1, numel(DB));
-for i = 1:numel(transmembraneSectorCell)
-    aaInTrans = sum(transmembraneSectorCell{i}) + aaInTrans;
-    aaInSector = aaInSector + numel(transmembraneSectorCell{i});
-    percentInTransPerSector(i) = sum(transmembraneSectorCell{i}) / numel(transmembraneSectorCell{i});
-end
-
-percentInTrans = aaInTrans / aaInSector;
-
-%%
-% Amino acid frequency in the transmembrane part of the sectors
-seq = '';
-for i = 1:numel(transmembraneSectorCell)
-    sequence = DB{i}.Sequence;
-    seq = [seq sequence(transmembraneSectorCell{i} == 1)];
-end
-
-aaFreqTransmembrane = aacount(seq);
-aaFreqTransmembrane = struct2cell(aaFreqTransmembrane);
-aaFreqTransmembrane = cell2mat(aaFreqTransmembrane);
-aaFreqTransmembrane = aaFreqTransmembrane / sum(aaFreqTransmembrane);
-%%
-figure('Name', 'Percentage of amino acid in transmembrane region per sector');
-hist(percentInTransPerSector);
-ylabel('Number of sectors');
-xlabel('Percentage of transmembrane amino acids');
-
-%%
-% Let's isolate the sectors which have more than 50 % of their aa in the
-% transmembrane region.
     
 
 

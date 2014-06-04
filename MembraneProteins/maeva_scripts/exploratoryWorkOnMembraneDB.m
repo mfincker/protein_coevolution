@@ -86,16 +86,15 @@ meanLength = mean(lengths);
 
 %%
 figure('Name','Distribution of the length of sectors');
-subplot(1,2,1);
 boxplot(lengths);
-title('Distribution of the length of sectors');
-ylabel('Number of reisdue');
-set(gca,'XTickLabel','Membrane sector database');
-subplot(1,2,2);
-hist(lengths,25);
-title('Distribution of the length of sectors');
-xlabel('Nuumber of residue');
-ylabel('Number of sectors');
+title('Distribution of the length of sectors', 'FontSize',18,...
+       'FontWeight','bold');
+ylabel('Number of reisdues', 'FontSize',16,...
+       'FontWeight','bold');
+set(gca,'XTickLabel','Membrane sector database','FontSize',16,...
+       'FontWeight','bold');
+
+
 
 %%
 % Aminoc acid frequency in the sector DB:
@@ -203,6 +202,27 @@ ylim([-0.02 0.02]);
 set(gca,'XTickLabel',{'A','R','N','D','C','Q','E','G','H','I','L','K', ...
     'M','F','P','S','T','W','Y','V'},'XTick',1:20);
             
+
+%%
+figure('Name', 'Amino acid frequency in the membrane sectors');
+
+bar([(freqAAinDB - freqAAinMembraneProteins) ./ freqAAinMembraneProteins, ...
+    (freqAAinDB - freqAAinUniprot) ./ freqAAinUniprot]);
+title(['Relative enrichment in the membrane sectors'], 'FontSize',20,...
+       'FontWeight','bold')
+ylabel('Frequency', 'FontSize',18,...
+       'FontWeight','bold');
+set(gca,'XTickLabel',{'A','R','N','D','C','Q','E','G','H','I','L','K', ...
+    'M','F','P','S','T','W','Y','V'},'XTick',1:20, 'FontSize',18,...
+       'FontWeight','bold');
+a = legend('relative enrichment from the membrane proteins', 'relative enrichment from Uniprot ');
+set(a, 'Location', 'NorthWest', 'FontSize',18,...
+       'FontWeight','bold');
+
+
+ 
+
+
 %%
 % Analysis: 
 % The difference in distribution between the aa freq in the
@@ -674,10 +694,15 @@ aaFreqTransmembrane = aaFreqTransmembrane / sum(aaFreqTransmembrane);
 
 %%
 figure('Name', 'Percentage of amino acid in transmembrane region per sector');
-hist(percentInTransPerSector);
-ylabel('Number of sectors');
-xlabel('Percentage of transmembrane amino acids');
-
+hist(percentInTransPerSector, 20);
+ylabel('Number of sectors', 'FontSize',18,...
+       'FontWeight','bold');
+xlabel('Percentage of transmembrane amino acids', 'FontSize',18,...
+       'FontWeight','bold');
+title('Distribution of the transmembrane residues in sectors', 'FontSize',20,...
+       'FontWeight','bold');
+set(gca, 'FontSize',18,...
+       'FontWeight','bold');
 %%
 figure('Name','Amino acid frequency in the transmembrane aa in sectors')
 subplot(2,1,1);
@@ -744,7 +769,7 @@ hold on;
 plot3(eigenValueDB(3,trans80), ...
     eigenValueDB(1,trans80), ...
     eigenValueDB(2,trans80),'.', ...
-    'MarkerSize', 15, 'Color', 'b');
+    'MarkerSize', 15, 'Color', 'b','Markersize', 16);
 
 
 
@@ -857,41 +882,57 @@ numTransPdb = numel(getPdb(DBtrans75));
 figure('Name', 'EigenValues of the sectors with more than 75% aa in transmembrane regions')
 subplot(2,1,1);
 
-% plot3(normEigenValueDB(3,:),normEigenValueDB(1,:),normEigenValueDB(2,:),'.', ...
-%     'Color',[0.7 0.7 0.7], 'MarkerSize', 8);
-%hold on;
+plot3(normEigenValueDB(3,:),normEigenValueDB(1,:),normEigenValueDB(2,:),'.', ...
+    'Color',[0.7 0.7 0.7], 'MarkerSize', 8);
+hold on;
 plot3(normEigenValueDB(3,trans75), ...
     normEigenValueDB(1,trans75), ...
     normEigenValueDB(2,trans75),'.', ...
-    'MarkerSize', 15, 'Color', 'b');
+    'MarkerSize', 18, 'Color', 'b');
 
 
 
 
 grid on;
-title('Transmembrane sectors principal component projection')
-xlabel('normalized eigenValue 3');
-ylabel('normalized eigenValue 1');
-zlabel('normalized eigenValue 2');
+title('Transmembrane sectors principal component projection', 'FontSize',20,...
+       'FontWeight','bold');
+xlabel('normalized eigenValue 3', 'FontSize',18,...
+       'FontWeight','bold');
+ylabel('normalized eigenValue 1', 'FontSize',18,...
+       'FontWeight','bold');
+zlabel('normalized eigenValue 2', 'FontSize',18,...
+       'FontWeight','bold');
+ set(gca, 'FontSize',18,...
+       'FontWeight','bold');
 
+   legend('All sectors','Transmembrane sectors', 'FontSize',18,...
+       'FontWeight','bold');
 subplot(2,1,2);
 % 
-% plot3(eigenValueDB(3,:),eigenValueDB(1,:),eigenValueDB(2,:),'.', ...
-%     'Color',[0.7 0.7 0.7], 'MarkerSize', 8);
-%hold on;
+plot3(eigenValueDB(3,:),eigenValueDB(1,:),eigenValueDB(2,:),'.', ...
+    'Color',[0.7 0.7 0.7], 'MarkerSize', 8);
+hold on;
 plot3(eigenValueDB(3,trans75), ...
     eigenValueDB(1,trans75), ...
     eigenValueDB(2,trans75),'.', ...
-    'MarkerSize', 15, 'Color', 'b');
+    'MarkerSize', 18, 'Color', 'b');
 
 
 
 grid on;
-title('Transmembrane sectors principal component projection')
-xlabel('eigenValue 3');
-ylabel('eigenValue 1');
-zlabel('eigenValue 2');
-
+zlim([0 500]);
+title('Transmembrane sectors principal component projection', 'FontSize',20,...
+       'FontWeight','bold');
+xlabel('eigenValue 3','FontSize',18,...
+       'FontWeight','bold');
+ylabel('eigenValue 1', 'FontSize',18,...
+       'FontWeight','bold');
+zlabel('eigenValue 2', 'FontSize',18,...
+       'FontWeight','bold');
+set(gca, 'FontSize',18,...
+       'FontWeight','bold');
+   legend('All sectors','Transmembrane sectors', 'FontSize',18,...
+       'FontWeight','bold');
 
 %%
 % Clustering of the trans sector normalized eigenVal:
@@ -917,6 +958,7 @@ X = [normEigenValueDB(1,trans75); ...
 
           %%
 figure('Name','K mean clustering of the normalized eigen value of trans75');
+subplot(2,1,1)
  plot3(X(idx==1,1),X(idx==1,2),X(idx==1,3),'b.','MarkerSize',12)
  hold on
  grid on
@@ -928,6 +970,21 @@ figure('Name','K mean clustering of the normalized eigen value of trans75');
  xlabel('Normalized eigenValue 1');
 ylabel('Normalized eigenValue 2');
 zlabel('Normalized eigenValue 3');
+legend('Cluster 1','Cluster 2','Cluster 3','Cluster 4','Cluster 5', 'FontSize',18,...
+       'FontWeight','bold');
+
+subplot(2,1,2);
+ plot3(Y(idx==1,1),Y(idx==1,2),Y(idx==1,3),'b.','MarkerSize',12)
+ hold on
+ grid on
+ plot3(Y(idx==2,1),Y(idx==2,2),Y(idx==2,3),'g.','MarkerSize',12)
+ plot3(Y(idx==3,1),Y(idx==3,2),Y(idx==3,3),'y.','MarkerSize',12)
+ plot3(Y(idx==4,1),Y(idx==4,2),Y(idx==4,3),'m.','MarkerSize',12)
+ plot3(Y(idx==5,1),Y(idx==5,2),Y(idx==5,3),'r.','MarkerSize',12)
+ title('Scatter plot of the eigen values of the transmembrane sectors');
+ xlabel('EigenValue 1');
+ylabel('EigenValue 2');
+zlabel('EigenValue 3');
  
  %%
  Y = [eigenValueDB(1,trans75); ...
@@ -1025,11 +1082,11 @@ for i = 1:numel(subgroups75)
 end
 
 %%
-DBtrans75_1 = DBtrans75(idx(idx==1));
-DBtrans75_2 = DBtrans75(idx(idx==2));
-DBtrans75_3 = DBtrans75(idx(idx==3));
-DBtrans75_4 = DBtrans75(idx(idx==4));
-DBtrans75_5 = DBtrans75(idx(idx==5));
+DBtrans75_1 = DBtrans75((idx==1));
+DBtrans75_2 = DBtrans75((idx==2));
+DBtrans75_3 = DBtrans75((idx==3));
+DBtrans75_4 = DBtrans75((idx==4));
+DBtrans75_5 = DBtrans75((idx==5));
 
 save('DBtrans75_1.mat', 'DBtrans75_1');
 save('DBtrans75_2.mat', 'DBtrans75_2');
