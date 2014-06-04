@@ -12,10 +12,7 @@ imagesc(msa);
 title('MSA of Homo Sapien p53 Sequences', 'FontSize', 20);
 ylabel('No. of Sequences', 'FontSize', 18);
 xlabel('Residue Index', 'FontSize', 18);
-%%
-% Read Functional Assessment Data
-function_assess_raw = importdata('functionalAssessmentIARC TP53 Database, R17.txt');
-function_assess_raw = function_assess_raw.textdata;
+
 %%
 % Read Somatic Mutation Data
 [num, txt, somatic_mutation_raw] = xlsread('somatic.xlsx');
@@ -246,10 +243,10 @@ max_mut_msa = max_mut_msa(2:length(max_mut_msa),1:length(cell2mat(TP53_clusters(
 max_mut_msa = vertcat(repmat(max_mut_msa(1,:),length(max_mut_msa)/2,1),max_mut_msa);
 imagesc(max_mut_msa);
 xlabel('Residues in Cluster 3', 'FontSize', 18);
-ylabel('Sequences with Mutation and Reference Sequence', 'FontSize', 18);
+% ylabel('Sequences with Mutation and Reference Sequence', 'FontSize', 18);
 title('Cluster MSA of Sequences', 'FontSize', 20);
 xticks = linspace(1,length(max_mut_msa(1,:)), length(max_mut_msa(1,:)));
-set(gca, 'XTick', xticks, 'XTickLabel', xticks);
+set(gca, 'XTick', xticks, 'XTickLabel', clustMSA(1,1:length(max_mut_msa(1,:)),max_mut_clust_index));
 set(gca, 'YTick', [], 'YTickLabel', []);
 
 %% Phenotypic enrichment for each sector
