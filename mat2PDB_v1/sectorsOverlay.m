@@ -32,7 +32,7 @@ function sectorsOverlay(sectorDB)
     
 
 
-    end
+end
     
 pdbCoords = struct(field1, value1, field2, value2, field3, value3, field4, value4, field5, value5);
 % create PDB from coordinates
