@@ -151,37 +151,41 @@ clust_mutation = unique(clust_mutation, 'rows');
 
 
 %% Create trimmed database of unique mutations for each residue
-unique_mutations_cell = somatic_mutation_trim(:,[2,6,7,17]);
-mut_count = 1;
-for i = 1:length(unique_mutations_cell(:,1))
-    for j = 1:length(unique_mutations(1,:))
-        if isa(unique_mutations{i,j},'double')
-            unique_mutations{i,j} = num2str(unique_mutations{i,j});
-        end
-        if (length(unique_mutations_cell{i,2}) <=4 && length(unique_mutations_cell{i,3}) <=4)
-        unique_mutations(mut_count,1) = cell2mat(unique_mutations_cell(i,1));
-        unique_mutations(mut_count,4) = cell2mat(unique_mutations_cell(i,4));
-            for aa = 2:3 % WT AA and MT AA
-                if (strcmp(unique_mutations_cell(i,aa), 'NA'))
-                     % deletion causing gaps
-                    unique_mutations(mut_count,aa) = aa2int('-');
-                elseif (strcmp(unique_mutations_cell(i,aa), 'STOP'))
-                     % translation stop, * in MATLAB
-                    unique_mutations(mut_count,aa) = aa2int('*');
-                else % substitution
-                    AminoAcid = aminolookup('Abbreviation', unique_mutations_cell{i,aa});
-                    oneLetterCode = AminoAcid(1,1);
-                    unique_mutations(mut_count,aa) = aa2int(AminoAcid(1,1));
-                end
-            end
-        mut_count = mut_count + 1;
-        end
-        unique_mutations(i,j) = cellstr(unique_mutations(i,j));
-    end
-end
-unique_mutations_new = unique(unique_mutations,'rows');
-
-
+% unique_mutations_cell = somatic_mutation_trim(:,[2,6,7,17]);
+% unique_mutations = cell(2);
+% mut_count = 1;
+% for i = 1:length(unique_mutations_cell(:,1))
+%     for j = 1:length(unique_mutations_cell(1,:))
+%         if isa(unique_mutations{i,j},'double')
+%             unique_mutations{i,j} = num2str(unique_mutations{i,j});
+%         end
+%         if (length(unique_mutations_cell{i,2}) <=4 && length(unique_mutations_cell{i,3}) <=4)
+%         unique_mutations(mut_count,1) = cell2mat(unique_mutations_cell(i,1));
+%         unique_mutations(mut_count,4) = cell2mat(unique_mutations_cell(i,4));
+%             for aa = 2:3 % WT AA and MT AA
+%                 if (strcmp(unique_mutations_cell(i,aa), 'NA'))
+%                      % deletion causing gaps
+%                     unique_mutations(mut_count,aa) = aa2int('-');
+%                 elseif (strcmp(unique_mutations_cell(i,aa), 'STOP'))
+%                      % translation stop, * in MATLAB
+%                     unique_mutations(mut_count,aa) = aa2int('*');
+%                 else % substitution
+%                     AminoAcid = aminolookup('Abbreviation', unique_mutations_cell{i,aa});
+%                     oneLetterCode = AminoAcid(1,1);
+%                     unique_mutations(mut_count,aa) = aa2int(AminoAcid(1,1));
+%                 end
+%             end
+%         mut_count = mut_count + 1;
+%         end
+%     end
+% %     unique_mutations(i,:) = char(unique_mutations(i,:));
+% end
+% 
+% 
+% for i = 1:length(unique_mutations_cell(:,1))
+%     unique_mutations(i,:) = char(unique_mutations(i,:));
+% end
+% unique_mutations_new = unique(unique_mutations,'rows');
 
 
 % figure
