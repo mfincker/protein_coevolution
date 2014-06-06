@@ -16,3 +16,7 @@ processed_data.mat: the saved matlab workspace after running the analyses in TP5
 stats.mat: the saved matlab workspace after running the statistics on enrichment of figure 1 and counts of mutated sequences in figure 2.
 
 compensatory mutation list.mat: the list of compensatory mutations found using our strategy is stored in comp_mut, with the first four columns and last four containing information of the residue index, wild type AA, mutant AA (using MATLAB’s aa2int), and the cluster index. Column 5 is the sequences with the compensatory mutation.
+
+Supplemental Tables TP53.docx: this word file contains the three supplemental tables of statistic tests done on the TP53 data.
+
+Comp Mutation Table TP53.docx: this word file contains the table of compensatory mutation candidates generated from the database.
