@@ -228,6 +228,7 @@ set(gca, 'XTick', xticks, 'XTickLabel', clustMSA(1,1:length(max_mut_msa(1,:)),ma
 set(gca, 'YTick', [], 'YTickLabel', []);
 
 
+<<<<<<< HEAD
 %% Compensatory Mutation Candidates
 %%
 % Load covariance matrix
@@ -310,3 +311,48 @@ for i=1:length(clust_mutation_cell)
         end
     end
 end
+=======
+%% Candidate list of compensatory mutations
+%This section is meant to find the residues that may contain compensatory
+%mutations among other sequences for select mutations in Sectors 2,3,and 4.
+%These sectors were chosen because sectors 2 and 4 may have be more related
+%to function and Sector 3 was chosen because of a single mutation that is
+%fixed among multiple species. The candidate residues were selected by
+%using the number .3 as the cutoff for high covariation. All residues
+%selected within a chosen sector a) contained a mutation and b) were highly
+%variable with the mutations.
+ load('p53-M-ats.mat');
+ cov_M = M; 
+ %Covariation matrix used to determine which residues may coevolve with
+ %mutation
+%  Sectors_with_mutations_in_other_species_counts = cell2mat(clust_mutation_cell(:,5));
+ Sector3_with_mutations = find(cell2mat(clust_mutation_cell(:,4)) == 3);
+  Sector3_with_mutations_new = clust_mutation_cell(Sector3_with_mutations,[1,2,3,5]);
+ 
+ Sector3_new_residues = find_candidate_residues(clusters{1,3},Sector3_with_mutations_new,...
+     cov_M,300,ats);
+ 
+ %Sectors 2 and 4
+ Sector2_with_mutations = find(cell2mat(clust_mutation_cell(:,4)) == 2);
+ Sector2_with_mutations_new = clust_mutation_cell(Sector2_with_mutations,[1:3,5]);
+ Sector2_new_residues = find_candidate_residues(clusters{1,2},Sector3_with_mutations_new,...
+     cov_M,10,ats);
+ 
+ 
+ Sector4_with_mutations = find(cell2mat(clust_mutation_cell(:,4)) == 4);
+ Sector4_with_mutations_new = clust_mutation_cell(Sector4_with_mutations,[1:3,5]);
+ Sector4_new_residues = find_candidate_residues(clusters{1,4},Sector3_with_mutations_new,...
+     cov_M,20,ats);
+ 
+ 
+
+
+
+
+
+
+
+%% Map to pdb
+%pdb is 3Q05
+
+>>>>>>> FETCH_HEAD

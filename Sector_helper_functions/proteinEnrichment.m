@@ -3,7 +3,7 @@ function [ enrichment, totalsectorresi] = proteinEnrichment( proteinsectorDB )
 %   Detailed explanation goes here
 
 % get the sequences from all sectors in a given protein
-sectorSeq={}
+sectorSeq={};
 for i = 1:numel(proteinsectorDB)
     sectorSeq{i}= proteinsectorDB{i}.Sequence;
 end
@@ -19,7 +19,7 @@ cellSect = struct2cell(aacountSect);
 
 % total number of residues in sectors
 totalsectorresi = sum(cell2mat(cellSect));
-
+disp(['Total sector residues: ' num2str(totalsectorresi)]);
 
 % get frequencies of sector residues as a fraction of total sector residues
 
