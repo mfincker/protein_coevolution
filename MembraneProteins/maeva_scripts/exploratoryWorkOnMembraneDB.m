@@ -958,33 +958,19 @@ X = [normEigenValueDB(1,trans75); ...
 
           %%
 figure('Name','K mean clustering of the normalized eigen value of trans75');
-subplot(2,1,1)
- plot3(X(idx==1,1),X(idx==1,2),X(idx==1,3),'b.','MarkerSize',12)
+ plot3(X(idx==1,3),X(idx==1,1),X(idx==1,2),'b.','MarkerSize',18)
  hold on
  grid on
- plot3(X(idx==2,1),X(idx==2,2),X(idx==2,3),'g.','MarkerSize',12)
- plot3(X(idx==3,1),X(idx==3,2),X(idx==3,3),'y.','MarkerSize',12)
- plot3(X(idx==4,1),X(idx==4,2),X(idx==4,3),'m.','MarkerSize',12)
- plot3(X(idx==5,1),X(idx==5,2),X(idx==5,3),'r.','MarkerSize',12)
- title('Scatter plot of the normalized eigen value of the transmembrane sectors');
- xlabel('Normalized eigenValue 1');
-ylabel('Normalized eigenValue 2');
-zlabel('Normalized eigenValue 3');
+ plot3(X(idx==2,3),X(idx==2,1),X(idx==2,2),'g.','MarkerSize',18)
+ plot3(X(idx==3,3),X(idx==3,1),X(idx==3,2),'y.','MarkerSize',18)
+ plot3(X(idx==4,3),X(idx==4,1),X(idx==4,2),'m.','MarkerSize',18)
+ plot3(X(idx==5,3),X(idx==5,1),X(idx==5,2),'r.','MarkerSize',18)
+%  title('Scatter plot of the normalized eigen value of the transmembrane sectors');
+ xlabel('Normalized eigenValue 3');
+ylabel('Normalized eigenValue 1');
+zlabel('Normalized eigenValue 2');
 legend('Cluster 1','Cluster 2','Cluster 3','Cluster 4','Cluster 5', 'FontSize',18,...
        'FontWeight','bold');
-
-subplot(2,1,2);
- plot3(Y(idx==1,1),Y(idx==1,2),Y(idx==1,3),'b.','MarkerSize',12)
- hold on
- grid on
- plot3(Y(idx==2,1),Y(idx==2,2),Y(idx==2,3),'g.','MarkerSize',12)
- plot3(Y(idx==3,1),Y(idx==3,2),Y(idx==3,3),'y.','MarkerSize',12)
- plot3(Y(idx==4,1),Y(idx==4,2),Y(idx==4,3),'m.','MarkerSize',12)
- plot3(Y(idx==5,1),Y(idx==5,2),Y(idx==5,3),'r.','MarkerSize',12)
- title('Scatter plot of the eigen values of the transmembrane sectors');
- xlabel('EigenValue 1');
-ylabel('EigenValue 2');
-zlabel('EigenValue 3');
  
  %%
  Y = [eigenValueDB(1,trans75); ...
