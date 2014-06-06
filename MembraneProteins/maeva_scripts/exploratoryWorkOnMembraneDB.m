@@ -88,12 +88,8 @@ medianLength = median(lengths);
 %%
 figure('Name','Distribution of the length of sectors');
 boxplot(lengths);
-title('Distribution of the length of sectors', 'FontSize',18,...
-       'FontWeight','bold');
-ylabel('Number of reisdues', 'FontSize',16,...
-       'FontWeight','bold');
-set(gca,'XTickLabel','Membrane sector database','FontSize',16,...
-       'FontWeight','bold');
+ylabel('Number of reisdues', 'FontSize',11,'FontName', 'arial');
+set(gca,'XTickLabel','Membrane sector database','FontSize',11,'FontName', 'arial');
 
 
 
@@ -889,7 +885,7 @@ figure('Name', 'EigenValues of the sectors with more than 75% aa in transmembran
 subplot(2,1,1);
 
 plot3(normEigenValueDB(3,:),normEigenValueDB(1,:),normEigenValueDB(2,:),'.', ...
-    'Color',[0.7 0.7 0.7], 'MarkerSize', 8);
+    'Color',[0.5 0.5 0.5], 'MarkerSize', 7);
 hold on;
 plot3(normEigenValueDB(3,trans75), ...
     normEigenValueDB(1,trans75), ...
@@ -900,23 +896,21 @@ plot3(normEigenValueDB(3,trans75), ...
 
 
 grid on;
-title('Transmembrane sectors principal component projection', 'FontSize',20,...
-       'FontWeight','bold');
-xlabel('normalized eigenValue 3', 'FontSize',18,...
-       'FontWeight','bold');
-ylabel('normalized eigenValue 1', 'FontSize',18,...
-       'FontWeight','bold');
-zlabel('normalized eigenValue 2', 'FontSize',18,...
-       'FontWeight','bold');
- set(gca, 'FontSize',18,...
-       'FontWeight','bold');
+% title('Transmembrane sectors principal component projection', 'FontSize',20,...
+%        'FontWeight','bold');
+xlabel('normalized eigenValue 3', 'FontSize',11);
+ylabel('normalized eigenValue 1', 'FontSize',11);
+zlabel('normalized eigenValue 2', 'FontSize', 11);
+ set(gca, 'FontSize',11);
+ ylim([0.3 1])
+ zlim([0 0.5])
+ xlim([0 0.3])
 
-   legend('All sectors','Transmembrane sectors', 'FontSize',18,...
-       'FontWeight','bold');
+   legend('All membrane sectors','Transmembrane sectors', 'FontSize',11);
 subplot(2,1,2);
 % 
 plot3(eigenValueDB(3,:),eigenValueDB(1,:),eigenValueDB(2,:),'.', ...
-    'Color',[0.7 0.7 0.7], 'MarkerSize', 8);
+    'Color',[0.5 0.5 0.5], 'MarkerSize', 7);
 hold on;
 plot3(eigenValueDB(3,trans75), ...
     eigenValueDB(1,trans75), ...
@@ -927,18 +921,18 @@ plot3(eigenValueDB(3,trans75), ...
 
 grid on;
 zlim([0 500]);
-title('Transmembrane sectors principal component projection', 'FontSize',20,...
-       'FontWeight','bold');
-xlabel('eigenValue 3','FontSize',18,...
-       'FontWeight','bold');
-ylabel('eigenValue 1', 'FontSize',18,...
-       'FontWeight','bold');
-zlabel('eigenValue 2', 'FontSize',18,...
-       'FontWeight','bold');
-set(gca, 'FontSize',18,...
-       'FontWeight','bold');
-   legend('All sectors','Transmembrane sectors', 'FontSize',18,...
-       'FontWeight','bold');
+% title('Transmembrane sectors principal component projection', 'FontSize',20,...
+%        'FontWeight','bold');
+xlabel('eigenValue 3','FontSize',11);
+ylabel('eigenValue 1', 'FontSize',11);
+zlabel('eigenValue 2', 'FontSize',11);
+set(gca, 'FontSize',11);
+legend('All membrane sectors','Transmembrane sectors', 'FontSize',11);
+xlim([0 250]);
+ylim([0 5000]);
+zlim([0 500]);
+%    legend('All sectors','Transmembrane sectors', 'FontSize',18,...
+%        'FontWeight','bold');
 
 %%
 % Clustering of the trans sector normalized eigenVal:
