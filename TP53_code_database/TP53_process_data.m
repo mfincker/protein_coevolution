@@ -226,3 +226,87 @@ title('Cluster MSA of Sequences', 'FontSize', 20);
 xticks = linspace(1,length(max_mut_msa(1,:)), length(max_mut_msa(1,:)));
 set(gca, 'XTick', xticks, 'XTickLabel', clustMSA(1,1:length(max_mut_msa(1,:)),max_mut_clust_index));
 set(gca, 'YTick', [], 'YTickLabel', []);
+
+
+%% Compensatory Mutation Candidates
+%%
+% Load covariance matrix
+load('p53-M-ats.mat');
+%%
+% Selecting the compensatory mutation candidates using both the count of
+% abundance in non-human sequences and the number of coevolved residues
+% with mutations in the same sequences.
+clust_mut_residues = num2cell(unique(clust_mutation(:,1),'rows'));
+
+%%
+% Retrieve the information of residues coevolving w/ residues with
+% mutations
+for i=1:length(clust_mut_residues)
+    res_sector = is_in_sector(clusters,clust_mut_residues{i,1});
+    res_ind = find(ats==i);
+    coev_res = ats(find(M(res_ind,:)>0.4));
+    coev_res = coev_res(1,coev_res~=0);
+    coev_res(2,:) = 0;
+    for j=1:length(coev_res(1,:))
+        coev_res(2,j) = is_in_sector(clusters, coev_res(1,j));
+    end
+    clust_mut_residues{i,2} = coev_res;
+end
+%%
+% Preserve residues with some coevolving residues
+res_counter = 1;
+clust_mut_res = cell(res_counter,2);
+for i=1:length(clust_mut_residues)
+    if ~isempty(clust_mut_residues{i,2})
+        clust_mut_res(res_counter,:) = clust_mut_residues(i,:);
+        res_counter = res_counter + 1;
+    end
+end
+%%
+% Attach the coevolution information to clust_mutation, and use seq_msa to
+% identify compensatory mutations
+comp_mut_counter = 1;
+comp_mut = cell(comp_mut_counter,9);
+for i=1:length(clust_mutation_cell)
+    
+    if any(cell2mat(clust_mut_res(:,1))==clust_mutation_cell{i,1})
+        coev_res = clust_mut_res{find(cell2mat(clust_mut_res(:,1))==clust_mutation_cell{i,1}),2};
+        for j=1:length(coev_res(1,:))
+            % column in seqmsa corresponding to the mutation residue
+            mut_res_msa = seqmsa(:,clust_mutation_cell{i,1});
+            % sequences with the mutation we're currently looking at
+            mut_msa = seqmsa(find(mut_res_msa(:,1)==clust_mutation_cell{i,3}),:);
+            if ~isempty(mut_msa)
+                % column in mut_msa corresponding to the coevolving residue
+                coev_res_msa = mut_msa(:,coev_res(1,j));
+                % if there is a dominating mutation in the coevolving residue,
+                % put the compensating mutations into the comp_mut array
+                coev_res_mut_ind = find(coev_res_msa~=coev_res_msa(1,1));
+                if ~isempty(coev_res_mut_ind)
+                    % if the somatic mutation is compensated in more than
+                    % 90% of non-human sequences with some kind of mutation
+                    if nnz(coev_res_mut_ind)/length(coev_res_msa) >= 0.9
+                        coev_res_mut = unique(coev_res_msa(coev_res_mut_ind,1));
+                        for k=1:length(coev_res_mut)
+                            comp_mut_msa = mut_msa(find(coev_res_msa==coev_res_mut(k,1)),:);
+                            % if a decent amount of non-human sequences
+                            % contain this compensatory mutation
+                            if length(comp_mut_msa(:,1)) >= 15
+                                comp_mut{comp_mut_counter,1} = clust_mutation_cell{i,1};
+                                comp_mut{comp_mut_counter,2} = clust_mutation_cell{i,2};
+                                comp_mut{comp_mut_counter,3} = clust_mutation_cell{i,3};
+                                comp_mut{comp_mut_counter,4} = clust_mutation_cell{i,4};
+                                comp_mut{comp_mut_counter,5} = comp_mut_msa;
+                                comp_mut{comp_mut_counter,6} = coev_res(1,j);
+                                comp_mut{comp_mut_counter,7} = coev_res_msa(1,1);
+                                comp_mut{comp_mut_counter,8} = coev_res_mut(k,1);
+                                comp_mut{comp_mut_counter,9} = is_in_sector(clusters,coev_res(1,j));
+                                comp_mut_counter = comp_mut_counter + 1;
+                            end
+                        end
+                    end
+                end
+            end    
+        end
+    end
+end
