@@ -840,7 +840,7 @@ zlabel('eigenValue 2');
 
 
 %%
-% Let's isolate the sectors which have more than 90 % of their aa in the
+% Let's isolate the sectors which have more than 50 % of their aa in the
 % transmembrane region.
 
 trans50 = find(percentInTransPerSector >= 0.5);
@@ -878,6 +878,11 @@ numTransSector = numel(DBtrans75);
 numTransGroup = size(getGroup(DBtrans75),2);
 numTransSubgroup = size(getSubgroup(DBtrans75),2);
 numTransPdb = numel(getPdb(DBtrans75));
+
+
+aaFreqDB75 = aaSectorDBCount(DBtrans75);
+aaFreqDB75 = sum(aaFreqDB75,2)/ sum(sum(aaFreqDB75,2));
+aaEnrichment = aaFreqDB75 ./ freqAAinMembraneProteins;
 
 %%
 figure('Name', 'EigenValues of the sectors with more than 75% aa in transmembrane regions')
@@ -955,7 +960,7 @@ X = [normEigenValueDB(1,trans75); ...
     normEigenValueDB(3,trans75)]';
 
 [idx,ctrs] = kmeans(X,5,...
-              'Replicates',1000,'Options',opts);
+              'Replicates',10000,'Options',opts);
 
           %%
 figure('Name','K mean clustering of the normalized eigen value of trans75');

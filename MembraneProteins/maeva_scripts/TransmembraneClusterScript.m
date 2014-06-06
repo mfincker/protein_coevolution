@@ -6,6 +6,9 @@ DBtrans75_3 = importdata('DBtrans75_3.mat');
 DBtrans75_4 = importdata('DBtrans75_4.mat');
 DBtrans75_5 = importdata('DBtrans75_5.mat');
 
+%%
+DBtrans75 = [DBtrans75_1 DBtrans75_2 DBtrans75_3 DBtrans75_4 DBtrans75_5];
+
 %% Amino acid frequency and enrichment
 aaFreqDB75_1 = aaSectorDBCount(DBtrans75_1);
 aaFreqDB75_1 = sum(aaFreqDB75_1,2)/ sum(sum(aaFreqDB75_1,2));
@@ -21,6 +24,12 @@ aaFreqDB75_4 = sum(aaFreqDB75_4,2)/ sum(sum(aaFreqDB75_4,2));
 
 aaFreqDB75_5 = aaSectorDBCount(DBtrans75_5);
 aaFreqDB75_5 = sum(aaFreqDB75_5,2)/ sum(sum(aaFreqDB75_5,2));
+
+aaFreqDB75 = aaSectorDBCount(DBtrans75);
+aaFreqDB75 = sum(aaFreqDB75,2)/ sum(sum(aaFreqDB75,2));
+
+%%
+
 
 %% Amino acid count;
 aaCount75_1 = sum(aaSectorDBCount(DBtrans75_1),2);
