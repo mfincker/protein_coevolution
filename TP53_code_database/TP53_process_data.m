@@ -64,15 +64,25 @@ somatic_mutations_only_in_sectors = somatic_mutation_trim(mutations_and_what_sec
 %% Relative Sector Enrichment
 % For each sector
 figure
-Sector_enrichment = zeros(length(TP53_clusters),1);
+Sector_enrichment = zeros(length(TP53_clusters),2);
 for j = 1:length(TP53_clusters)
 Sector_enrichment(j,1) = (inSectorCount(1,j)./length(somatic_mutation_trim(:,2)))./(length(cell2mat(TP53_clusters(1,j)))./393);
 end
 bar(1:length(Sector_enrichment),Sector_enrichment,'b');
-title('Mutation enrichment per sector', 'FontSize', 20);
+title('Mutation enrichment per sector', 'FontSize', 18);
 xlabel('Sector number', 'FontSize', 18);
 ylabel('Enrichment (% of (mutants in sector/totalmutants)./(residues in sector/totalresidues)');
 
+%%
+% Calculate p value of the enrichment based on chi square dist.
+for i = 1:length(TP53_clusters)
+    % expected mut/residue ratio
+    inSectorCount(2,i) = length(somatic_mutation_trim(:,1))*length(cell2mat(TP53_clusters(1,i)))/393;
+    % chi squared value
+    inSectorCount(3,i) = (inSectorCount(2,i) - inSectorCount(1,i))^2/inSectorCount(2,i);
+    % p value
+    inSectorCount(4,i) = chi2cdf(inSectorCount(3,i),6,'upper');
+end
 %% Compensatory mutations
 %
 % First we will look at each mutation at each residue within a sector
@@ -148,52 +158,6 @@ for i=1:length(clust_mutation_cell)
 end
 clust_mutation = unique(clust_mutation, 'rows');
 
-
-
-%% Create trimmed database of unique mutations for each residue
-% unique_mutations_cell = somatic_mutation_trim(:,[2,6,7,17]);
-% unique_mutations = cell(2);
-% mut_count = 1;
-% for i = 1:length(unique_mutations_cell(:,1))
-%     for j = 1:length(unique_mutations_cell(1,:))
-%         if isa(unique_mutations{i,j},'double')
-%             unique_mutations{i,j} = num2str(unique_mutations{i,j});
-%         end
-%         if (length(unique_mutations_cell{i,2}) <=4 && length(unique_mutations_cell{i,3}) <=4)
-%         unique_mutations(mut_count,1) = cell2mat(unique_mutations_cell(i,1));
-%         unique_mutations(mut_count,4) = cell2mat(unique_mutations_cell(i,4));
-%             for aa = 2:3 % WT AA and MT AA
-%                 if (strcmp(unique_mutations_cell(i,aa), 'NA'))
-%                      % deletion causing gaps
-%                     unique_mutations(mut_count,aa) = aa2int('-');
-%                 elseif (strcmp(unique_mutations_cell(i,aa), 'STOP'))
-%                      % translation stop, * in MATLAB
-%                     unique_mutations(mut_count,aa) = aa2int('*');
-%                 else % substitution
-%                     AminoAcid = aminolookup('Abbreviation', unique_mutations_cell{i,aa});
-%                     oneLetterCode = AminoAcid(1,1);
-%                     unique_mutations(mut_count,aa) = aa2int(AminoAcid(1,1));
-%                 end
-%             end
-%         mut_count = mut_count + 1;
-%         end
-%     end
-% %     unique_mutations(i,:) = char(unique_mutations(i,:));
-% end
-% 
-% 
-% for i = 1:length(unique_mutations_cell(:,1))
-%     unique_mutations(i,:) = char(unique_mutations(i,:));
-% end
-% unique_mutations_new = unique(unique_mutations,'rows');
-
-
-% figure
-% New_Sector_enrichment = zeros(length(TP53_clusters),1);
-% for j = 1:length(TP53_clusters)
-% New_Sector_enrichment(j,1) = (length(find(clust_mutation(:,4)==j))./length(clust_mutation(:,4)))./(length(cell2mat(TP53_clusters(1,j)))./393);
-% end
-
 %%
 % The actual part of finding compensatory mutation. First, we look at each
 % mutation in the mutation database, and count the frequencies of each
@@ -223,11 +187,13 @@ end
 %%
 % Plot the number of carcinogenic mutations present in other species in the
 % MSA.
+mutCount_means = zeros(1,6);
 for i=1:length(TP53_clusters)
     subplot(2,3,i);
     clust_mut_i = find(cell2mat(clust_mutation_cell(:,4)) == i);
     x_mutIndex = cell2mat(clust_mutation_cell(clust_mut_i,1));
     y_mutCount = cell2mat(clust_mutation_cell(clust_mut_i,5));
+    mutCount_means(1,i) = mean(y_mutCount);
     scatter(x_mutIndex, y_mutCount, 35, 'filled');
     xlabel('Index of Carcinogenic Mutation', 'FontSize', 18);
     titleStr = sprintf('Sector %d', i);
@@ -235,6 +201,14 @@ for i=1:length(TP53_clusters)
     ylabel('No. of Seqs with Mutation', 'FontSize', 18);
 end
 
+%%
+% Nonparametric comparisons of the no. of sequences with mutations in each 
+% sector
+[p_mutCount, mutCount_ANOVA_table, mutCount_stats] = kruskalwallis(transpose(cell2mat(clust_mutation_cell(:,5))),transpose(cell2mat(clust_mutation_cell(:,4))));
+%%
+% Multiple comparisons
+mutCount_multiComp = multcompare(mutCount_stats);
+mutCount_significant = mutCount_multiComp(find(mutCount_multiComp(:,6) <= 0.05),:);
 %%
 % From the above graph, we can see that there is one mutation in cluster 3
 % that exists in most of the sequences in the MSA. We extract the MSA of
@@ -252,6 +226,7 @@ title('Cluster MSA of Sequences', 'FontSize', 20);
 xticks = linspace(1,length(max_mut_msa(1,:)), length(max_mut_msa(1,:)));
 set(gca, 'XTick', xticks, 'XTickLabel', clustMSA(1,1:length(max_mut_msa(1,:)),max_mut_clust_index));
 set(gca, 'YTick', [], 'YTickLabel', []);
+<<<<<<< HEAD
 
 %% Candidate list of compensatory mutations
 %This section is meant to find the residues that may contain compensatory
@@ -305,3 +280,5 @@ set(gca, 'YTick', [], 'YTickLabel', []);
 
 %% Map to pdb
 %pdb is 3Q05
+=======
+>>>>>>> FETCH_HEAD

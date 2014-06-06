@@ -83,6 +83,7 @@ for sec = 1:numSector
 end
 
 meanLength = mean(lengths);
+medianLength = median(lengths);
 
 %%
 figure('Name','Distribution of the length of sectors');
@@ -105,20 +106,20 @@ freqAAinDB = countAAinDB / numResidue;
 
 % %%
 % % Amino acid frequency in the membrane proteins used to make the DB:
-countAAinMembraneProteins = zeros(20,numPdb);
-for prot = 1:numPdb
-    seq = getgenpept(pdb{prot});
-    seq = seq.Sequence;
-    count = aacount(seq);
-	count = struct2cell(count);
-	count = cell2mat(count);
-    countAAinMembraneProteins(:, prot) = count;
-end
+% countAAinMembraneProteins = zeros(20,numPdb);
+% for prot = 1:numPdb
+%     seq = getgenpept(pdb{prot});
+%     seq = seq.Sequence;
+%     count = aacount(seq);
+% 	count = struct2cell(count);
+% 	count = cell2mat(count);
+%     countAAinMembraneProteins(:, prot) = count;
+% end
+% 
+% countAAinMembraneProteins = sum(countAAinMembraneProteins,2);
+% save('countAAinMembraneProteins.mat', 'countAAinMembraneProteins');
 
-countAAinMembraneProteins = sum(countAAinMembraneProteins,2);
-save('countAAinMembraneProteins.mat', 'countAAinMembraneProteins');
-
-% countAAinMembraneProteins = importdata('countAAinMembraneProteins.mat');
+countAAinMembraneProteins = importdata('countAAinMembraneProteins.mat');
 freqAAinMembraneProteins = countAAinMembraneProteins ...
                                 / sum(sum(countAAinMembraneProteins,1),2);
        
@@ -665,7 +666,7 @@ sector_lowest18 = perm18(1:3);
 
 
 %% Exploring transmembrane
-
+transmembraneSectorCell = importdata('transmembraneSectorCell.mat');
 %%
 % Percentage of the aa in sectors in the transmembrane region:
 aaInTrans = 0;
@@ -856,7 +857,7 @@ trans50(notLongEnough) = [];
 DBtrans50 = DB(trans50);
 
 %%
-% Let's isolate the sectors which have more than 90 % of their aa in the
+% Let's isolate the sectors which have more than 75 % of their aa in the
 % transmembrane region.
 
 trans75 = find(percentInTransPerSector >= 0.75);
