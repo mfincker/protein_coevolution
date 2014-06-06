@@ -226,7 +226,7 @@ title('Cluster MSA of Sequences', 'FontSize', 20);
 xticks = linspace(1,length(max_mut_msa(1,:)), length(max_mut_msa(1,:)));
 set(gca, 'XTick', xticks, 'XTickLabel', clustMSA(1,1:length(max_mut_msa(1,:)),max_mut_clust_index));
 set(gca, 'YTick', [], 'YTickLabel', []);
-<<<<<<< HEAD
+
 
 %% Candidate list of compensatory mutations
 %This section is meant to find the residues that may contain compensatory
@@ -257,20 +257,10 @@ set(gca, 'YTick', [], 'YTickLabel', []);
  
  Sector4_with_mutations = find(cell2mat(clust_mutation_cell(:,4)) == 4);
  Sector4_with_mutations_new = clust_mutation_cell(Sector4_with_mutations,[1:3,5]);
- Sector4_new_residues_new = find_candidate_residues(clusters{1,4},Sector3_with_mutations_new,...
+ Sector4_new_residues = find_candidate_residues(clusters{1,4},Sector3_with_mutations_new,...
      cov_M,20,ats);
  
  
-%  res200ind = find(ats==200)
-% plot(1:length(M),M(res200ind,:));
-% hold on;
-% resinds  = find(M(res200ind,:)>.3); % residues in matrix with relatively high coevolution scores
-% residues = ats(resinds); % the corresponding residues
-% plot(resinds,M(res200ind,resinds),'xr');
-% xlabel('residues');
-% ylabel('coevolution with residue 200');
-% fprintf('%i covaries with residue 200.\n',residues(residues~=0))
-% Sector3_highly_fixed
 
 
 
@@ -280,5 +270,4 @@ set(gca, 'YTick', [], 'YTickLabel', []);
 
 %% Map to pdb
 %pdb is 3Q05
-=======
->>>>>>> FETCH_HEAD
+

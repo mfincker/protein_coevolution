@@ -29,7 +29,8 @@ for i = 1:length(residues_with_mutations(:,1))
     trim_residues= ismember(sector_residues,residues);
     new_kept(1) = 0;
     for j = 1:length(trim_residues)
-        if(trim_residues(j) == 1)
+        if(trim_residues(j) == 1 && (residues(j)~=residues_with_mutations{i,1} &&...
+                residues(j)~=0))
         counter = counter + 1;
         new_kept(counter) = residues(j);
         end
@@ -38,7 +39,6 @@ for i = 1:length(residues_with_mutations(:,1))
     candidate_residues{i,2} = residues_with_mutations{i,2};
     candidate_residues{i,3} = residues_with_mutations{i,3};
     candidate_residues{i,4} = new_kept;
-    new_kept
-i
+    
 end
 end
