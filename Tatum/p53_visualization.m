@@ -35,16 +35,16 @@ p53_sector_stucture_wDNA{1,3} = sector3wDNA;
 p53_sector_stucture_wDNA{1,4} = sector4wDNA;
 % p53_sector_stucturewDNA{1,5} = sector5wDNA;
 %Now without
-p53_sector_stucture_wo{1,1} = sector1wo;
-p53_sector_stucture_wo{1,2} = sector2wo;
-p53_sector_stucture_wo{1,3} = sector3wo;
-p53_sector_stucture_wo{1,4} = sector4wo;
-% p53_sector_stucturewo{1,5} = sector5wo;
+% p53_sector_stucture_wo{1,1} = sector1wo;
+% p53_sector_stucture_wo{1,2} = sector2wo;
+% p53_sector_stucture_wo{1,3} = sector3wo;
+% p53_sector_stucture_wo{1,4} = sector4wo;
+% % p53_sector_stucturewo{1,5} = sector5wo;
 
 
 sectorsOverlay(p53_sector_stucture_wDNA);
-
-sectorsOverlay(p53_sector_stucture_wo);
+% 
+% sectorsOverlay(p53_sector_stucture_wo);
 
 
 %Sector 1 visualized as blue, Sector 2 as green, sector 3 as yellow and
