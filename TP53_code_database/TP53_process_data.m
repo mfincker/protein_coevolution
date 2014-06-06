@@ -253,10 +253,49 @@ xticks = linspace(1,length(max_mut_msa(1,:)), length(max_mut_msa(1,:)));
 set(gca, 'XTick', xticks, 'XTickLabel', clustMSA(1,1:length(max_mut_msa(1,:)),max_mut_clust_index));
 set(gca, 'YTick', [], 'YTickLabel', []);
 
-%% Phenotypic enrichment for each sector
-%This section is meant to find the number of different phenotypes expressed
-%in each sector, and the relative enrichment of each phenotype within each
-%sector.
+%% Candidate list of compensatory mutations
+%This section is meant to find the residues that may contain compensatory
+%mutations among other sequences for select mutations in Sectors 2,3,and 4.
+%These sectors were chosen because sectors 2 and 4 may have be more related
+%to function and Sector 3 was chosen because of a single mutation that is
+%fixed among multiple species. The candidate residues were selected by
+%using the number .3 as the cutoff for high covariation. All residues
+%selected within a chosen sector a) contained a mutation and b) were highly
+%variable with the mutations.
+ load('p53-M-ats.mat');
+ cov_M = M; 
+ %Covariation matrix used to determine which residues may coevolve with
+ %mutation
+%  Sectors_with_mutations_in_other_species_counts = cell2mat(clust_mutation_cell(:,5));
+ Sector3_with_mutations = find(cell2mat(clust_mutation_cell(:,4)) == 3);
+  Sector3_with_mutations_new = clust_mutation_cell(Sector3_with_mutations,[1,2,3,5]);
+ 
+ Sector3_new_residues = find_candidate_residues(clusters{1,3},Sector3_with_mutations_new,...
+     cov_M,300,ats);
+ 
+ %Sectors 2 and 4
+ Sector2_with_mutations = find(cell2mat(clust_mutation_cell(:,4)) == 2);
+ Sector2_with_mutations_new = clust_mutation_cell(Sector2_with_mutations,[1:3,5]);
+ Sector2_new_residues = find_candidate_residues(clusters{1,2},Sector3_with_mutations_new,...
+     cov_M,10,ats);
+ 
+ 
+ Sector4_with_mutations = find(cell2mat(clust_mutation_cell(:,4)) == 4);
+ Sector4_with_mutations_new = clust_mutation_cell(Sector4_with_mutations,[1:3,5]);
+ Sector4_new_residues_new = find_candidate_residues(clusters{1,4},Sector3_with_mutations_new,...
+     cov_M,20,ats);
+ 
+ 
+%  res200ind = find(ats==200)
+% plot(1:length(M),M(res200ind,:));
+% hold on;
+% resinds  = find(M(res200ind,:)>.3); % residues in matrix with relatively high coevolution scores
+% residues = ats(resinds); % the corresponding residues
+% plot(resinds,M(res200ind,resinds),'xr');
+% xlabel('residues');
+% ylabel('coevolution with residue 200');
+% fprintf('%i covaries with residue 200.\n',residues(residues~=0))
+% Sector3_highly_fixed
 
 
 
