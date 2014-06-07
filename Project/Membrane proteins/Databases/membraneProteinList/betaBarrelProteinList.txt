@@ -1,0 +1,2670 @@
+3AEH
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+1WXR
+
+3ML3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+4BZA
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+3SLT
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+2QOM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+3SLJ	3SZE
+3SLT	3SLO
+2LME
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+1UYO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+1UYN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+1UYO
+3SZE
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+1WXR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+2GR7
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+4C00
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+4BZA
+3KVN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+1CWV
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+3SLJ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+4E1S
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+1F02
+
+1F02
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+3SLO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+4E1T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+1CWV
+
+2GR8
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+2GR7
+3SYS
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+2ODJ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+3SY7
+
+3SY7
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3SY9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3SZD
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3T20
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+2QTK
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+3SYS
+
+3T24
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3T0S
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3SYB
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3JTY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3SZV
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3MC9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+3MC8
+3MC8
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3Q7M
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3Q7O
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3Q7N
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3PRW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+3P1L	3Q7M	2YH3	3Q54
+3Q7N	3Q7O
+3Q5M
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+4K3B
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+4K3C
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2QDF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2YHC
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2X8X
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3TGO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2KM7
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+2YH9
+
+3Q6B
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2YH9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2YH3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2QCZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+3EFC	2V9H	3OG5	3Q6B
+2QDF
+2YH6
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+2YH5	2LAF	3SNS
+2LAE
+2YH5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3QKY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+2YHC	3Q5M
+
+2V9H
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3SNS
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2LAE
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2QDZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+3NJT
+
+2LAF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3EFC
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3P1L
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3Q54
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3NJT
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3OG5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3NSG
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1BT9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1UUN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2J1N
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+2XE1
+2XE5	2XG6	2XE2	2XE3
+3FYX
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3K1B
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1E54
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3O0E
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1OSM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1GFN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+6PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1GFM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3HWB
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+7PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3A2R
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+3A2S	3A2U	3A2T
+2FGQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1PHO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2FGR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+2FGQ
+4GF4
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+5PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2ZLD
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3A2S
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1GFP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1GFQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1HXU
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3A2T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3A2U
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2POR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1A0T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+1A0S
+1MPQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2F1C
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+2IWV	2JQY
+2IWW
+1A0S
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1BH3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1HXX
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1HXT
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2IWV
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2IWW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1OPF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2OMF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+1MPF	1OPF	1GFM	1BT9	1HXX	2ZFG	3FYX	3O0E	3HW9	3K19
+1GFN	1GFQ	1GFP	1GFO	1HXT	1HXU	2ZLD	3HWB	3K1B
+3HW9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2JQY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1MPN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1MPO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1MPM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1MAL
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+1MPM	1AF6
+1MPO	1MPN	1MPQ
+1PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+1BH3	1H6S
+3PRN	6PRN	8PRN	7PRN	5PRN	2PRN
+1MPF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1GFO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+4GEY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+4GF4
+1H6S
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+8PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2ZFG
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3K19
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2O4V
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1AF6
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2XG6
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2XE1
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2XE3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2XE2
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2XE5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2MPR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2K4T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Mitochondrial Outer Membrane
+2JK4
+
+4BUM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Mitochondrial Outer Membrane
+
+
+2JK4
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Mitochondrial Outer Membrane
+
+
+3EMN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Mitochondrial Outer Membrane
+
+
+1KMO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1PNZ	2D1U
+1KMP	1PO3	1PO0
+1PNZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QFF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QJ8
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1ORM	1Q9F	2M06
+1QJ9	1Q9G	2M07
+1BXW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1QJP	1G90	2JMM
+
+1I78
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1KMP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1WP1
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+3D5K
+
+3PF1
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1PO3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1PO0
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2YSU
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QJP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QJQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3FID
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1MM4
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1THQ	3GP6
+1MM5
+2WJR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+2WJQ
+2WJQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1FW3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1TLZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1TLY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+1TLZ	1TLW
+2HDI
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+2HDF
+1TLW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QJ9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3RFZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+4J3O
+3OHN
+2GSK
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2GRX
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3EFM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+4K7R
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3SKP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1FI1
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2FCP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2LHF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3V8U
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2IAH
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+4K7K
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2K0L
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1Q9G
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1Q9F
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2VDD
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3M8B
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3M8D
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2VDE
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2VDF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2F1V
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+2F1T
+2X4M
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1TQQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1UJW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1K24
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+2VDF
+
+2R88
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2R89
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1YC9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2X55
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+2X4M	2X56
+2X56
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3BS0
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+3BRZ
+2F1T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2HDF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2JMM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QFG
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3V83
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2YNK
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1XKW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1XKH
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+2O5P	2IAH
+
+2X27
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QKC
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1THQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1ILD
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3V89
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3BRY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3BRZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1ILZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3V8X
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+3SKP	3V83	3V8U	3V89
+3RBH
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1P4T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3DZM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3PIK
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+4K7R
+4K7K	4K34
+1FEP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1G90
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1IM0
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3PGR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3PGS
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3PGU
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3DWN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3DWO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1NQF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1NQG
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1NQE
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1UJW	2GUF	2GSK	2YSU	3M8B
+1NQF	1NQH	1NQG	3M8D
+4J3O
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3QRC
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3QRA
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+3QRC
+1NQH
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2R4L
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2R4N
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2R4O
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3D5K
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3GP6
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2O5P
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1MM5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1T16
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+3DWN	3PGR
+1T1L	2R88	2R4O	2R4N	2R4P	2R4L	3PGU	3PF1	2R89	3PGS
+2R4P
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2VQI
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2D1U
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1BY3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+2FCP	1QFG	1QKC	1FI1	2GRX
+1BY5	1FCP	1QFF	1QJQ
+1BY5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2M07
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2M06
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+4K34
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3OHN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1FW2
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1ORM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3CSN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3CSL
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+3CSN	3DDR
+1FCP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1T1L
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1EK9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1TQQ	2VDE
+2VDD
+3DDR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2GUF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QD6
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2ERV
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QD5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1FW2	1ILZ
+1QD6	1FW3	1IM0	1ILD
+1LKF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3M2L
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+7AHL
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+3M2L
+3M3R	3M4D	3M4E
+1PFO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+1M3I	1M3J
+4HSC
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3NSJ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+2LKF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+1XEZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3B07
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+1LKF
+2LKF	3LKF
+3KWV
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3O44
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+1XEZ
+
+1M3J
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+1M3I
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3M4D
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3M4E
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3M3R
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3LKF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3AEH
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+1WXR
+
+3ML3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+4BZA
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+3SLT
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+2QOM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+3SLJ	3SZE
+3SLT	3SLO
+2LME
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+1UYO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+1UYN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+1UYO
+3SZE
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+1WXR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+2GR7
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+4C00
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+4BZA
+3KVN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+1CWV
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+3SLJ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+4E1S
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+1F02
+
+1F02
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+3SLO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+
+4E1T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+1CWV
+
+2GR8
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Autotransporters
+
+2GR7
+3SYS
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+2ODJ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+3SY7
+
+3SY7
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3SY9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3SZD
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3T20
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+2QTK
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+3SYS
+
+3T24
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3T0S
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3SYB
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3JTY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3SZV
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Outer Membrane Carboxylate Channels (Occ)
+
+
+3MC9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+3MC8
+3MC8
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3Q7M
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3Q7O
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3Q7N
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3PRW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+3P1L	3Q7M	2YH3	3Q54
+3Q7N	3Q7O
+3Q5M
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+4K3B
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+4K3C
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2QDF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2YHC
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2X8X
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3TGO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2KM7
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+2YH9
+
+3Q6B
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2YH9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2YH3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2QCZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+3EFC	2V9H	3OG5	3Q6B
+2QDF
+2YH6
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+2YH5	2LAF	3SNS
+2LAE
+2YH5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3QKY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+2YHC	3Q5M
+
+2V9H
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3SNS
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2LAE
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+2QDZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+3NJT
+
+2LAF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3EFC
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3P1L
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3Q54
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3NJT
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3OG5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Omp85-TpsB Outer Membrane Transporter Superfamily
+
+
+3NSG
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1BT9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1UUN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2J1N
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+2XE1
+2XE5	2XG6	2XE2	2XE3
+3FYX
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3K1B
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1E54
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3O0E
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1OSM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1GFN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+6PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1GFM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3HWB
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+7PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3A2R
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+3A2S	3A2U	3A2T
+2FGQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1PHO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2FGR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+2FGQ
+4GF4
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+5PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2ZLD
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3A2S
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1GFP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1GFQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1HXU
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3A2T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3A2U
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2POR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1A0T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+1A0S
+1MPQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2F1C
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+2IWV	2JQY
+2IWW
+1A0S
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1BH3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1HXX
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1HXT
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2IWV
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2IWW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1OPF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2OMF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+1MPF	1OPF	1GFM	1BT9	1HXX	2ZFG	3FYX	3O0E	3HW9	3K19
+1GFN	1GFQ	1GFP	1GFO	1HXT	1HXU	2ZLD	3HWB	3K1B
+3HW9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2JQY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1MPN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1MPO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1MPM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1MAL
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+1MPM	1AF6
+1MPO	1MPN	1MPQ
+1PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+1BH3	1H6S
+3PRN	6PRN	8PRN	7PRN	5PRN	2PRN
+1MPF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1GFO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+4GEY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+4GF4
+1H6S
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+8PRN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2ZFG
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+3K19
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2O4V
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+1AF6
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2XG6
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2XE1
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2XE3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2XE2
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2XE5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2MPR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Porins and Relatives
+
+
+2K4T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Mitochondrial Outer Membrane
+2JK4
+
+4BUM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Mitochondrial Outer Membrane
+
+
+2JK4
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Mitochondrial Outer Membrane
+
+
+3EMN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Mitochondrial Outer Membrane
+
+
+1KMO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1PNZ	2D1U
+1KMP	1PO3	1PO0
+1PNZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QFF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QJ8
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1ORM	1Q9F	2M06
+1QJ9	1Q9G	2M07
+1BXW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1QJP	1G90	2JMM
+
+1I78
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1KMP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1WP1
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+3D5K
+
+3PF1
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1PO3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1PO0
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2YSU
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QJP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QJQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3FID
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1MM4
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1THQ	3GP6
+1MM5
+2WJR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+2WJQ
+2WJQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1FW3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1TLZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1TLY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+1TLZ	1TLW
+2HDI
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+2HDF
+1TLW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QJ9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3RFZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+4J3O
+3OHN
+2GSK
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2GRX
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3EFM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+4K7R
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3SKP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1FI1
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2FCP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2LHF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3V8U
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2IAH
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+4K7K
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2K0L
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1Q9G
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1Q9F
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2VDD
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3M8B
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3M8D
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2VDE
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2VDF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2F1V
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+2F1T
+2X4M
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1TQQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1UJW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1K24
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+2VDF
+
+2R88
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2R89
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1YC9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2X55
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+2X4M	2X56
+2X56
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3BS0
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+3BRZ
+2F1T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2HDF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2JMM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QFG
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3V83
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2YNK
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1XKW
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1XKH
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+2O5P	2IAH
+
+2X27
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QKC
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1THQ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1ILD
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3V89
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3BRY
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3BRZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1ILZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3V8X
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+3SKP	3V83	3V8U	3V89
+3RBH
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1P4T
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3DZM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3PIK
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+4K7R
+4K7K	4K34
+1FEP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1G90
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1IM0
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3PGR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3PGS
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3PGU
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3DWN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3DWO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1NQF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1NQG
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1NQE
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1UJW	2GUF	2GSK	2YSU	3M8B
+1NQF	1NQH	1NQG	3M8D
+4J3O
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3QRC
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3QRA
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+3QRC
+1NQH
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2R4L
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2R4N
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2R4O
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3D5K
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3GP6
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2O5P
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1MM5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1T16
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+3DWN	3PGR
+1T1L	2R88	2R4O	2R4N	2R4P	2R4L	3PGU	3PF1	2R89	3PGS
+2R4P
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2VQI
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2D1U
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1BY3
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+2FCP	1QFG	1QKC	1FI1	2GRX
+1BY5	1FCP	1QFF	1QJQ
+1BY5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2M07
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2M06
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+4K34
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3OHN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1FW2
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1ORM
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3CSN
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+3CSL
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+3CSN	3DDR
+1FCP
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1T1L
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1EK9
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1TQQ	2VDE
+2VDD
+3DDR
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2GUF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QD6
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+2ERV
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+
+
+1QD5
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Beta-Barrel Membrane Proteins: Monomeric/Dimeric
+1FW2	1ILZ
+1QD6	1FW3	1IM0	1ILD
+1LKF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3M2L
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+7AHL
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+3M2L
+3M3R	3M4D	3M4E
+1PFO
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+1M3I	1M3J
+4HSC
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3NSJ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+2LKF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+1XEZ
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3B07
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+1LKF
+2LKF	3LKF
+3KWV
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3O44
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+1XEZ
+
+1M3J
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+1M3I
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3M4D
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3M4E
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3M3R
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
+3LKF
+TRANSMEMBRANE PROTEINS: BETA-BARREL
+Adventitious Membrane Proteins: Beta-sheet Pore-forming Toxins
+
+
