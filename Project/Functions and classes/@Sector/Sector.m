@@ -1,6 +1,6 @@
 classdef Sector
     %SECTOR class: each instance of this class corresponds to a 
-    %sector identified through SCA. Does not support protein complexes yet !!!!
+    %sector identified through SCA.
     %   A sector is a group of residues from a given protein that
     %	coevolved together. 
     %   Ex : sector = Sector('2BH9', [166 170 171 172 173 174 176 183 193 ...
@@ -9,6 +9,11 @@ classdef Sector
     %                                 243 245 ])
     %       creates a sector from the pdb file 2BH9 with residues number 166, 170 ...
     %       243, 245.
+    %   Ex: sector = Sector('2CKZ', [166 170 171 172 173 174 176 183 193 ...
+    %                                 198 199 200 201 202 203 204 205 206 ...
+    %                                 208 210],'P35718')
+    %       creates a sector from the protein P35718 in the pdb file 2CKZ 
+    %       with residues number 166, 170 ... 208 210.
     %       Once created, you can access the fields like in a structure.
     %       The fields are not protected so be careful not to modify them.
     
@@ -21,6 +26,8 @@ classdef Sector
     	OrganismID
         Membrane
     	EC
+
+        % Membrane protein properties
         Group = '';
         Subgroup = '';
         MemberProteins = {};

@@ -1,4 +1,7 @@
-
+%% Script making the necessary variables tracking transmembrane
+% residue indexation to make the transmembrane SDB
+% 06/01/14 - Maeva
+%% Paths need to be modified to run again.
 
 %% Create a transmembrane feature dictionnary:
 % Uniprot ID --> Array of residue in the transmembrane region
@@ -25,44 +28,17 @@ end
 save('transDico.mat', 'transDico');
 
 
-%% Create a pdb <--> uniprot seq number map
+%% Create dictionnary containing pdbID as key and a matrix containing
+% the index of the first residue of the pdb sequence in the pdb record 
+% and on uniprot. This will be useful to map uniprot indexation onto the
+% pdb indexation.
 pdbDico = containers.Map();
-% pdbAcDico = containers.Map();
-% 
-% files = dir('pdbsws_res_*');
-% 
-% for i = 1:numel(files)
-%     disp (files(i).name)
-%     fMap = fopen(files(i).name, 'r');
-% 
-%     pdbDico = containers.Map();
-%     pdbAcDico = containers.Map();
-% 
-%     line = fgetl(fMap);
-%     while (strcmp(line,'') == 0 && ischar(line))
-%         try
-%             tokens = regexp(line, '(?<pdb>.+)[ ]+(?<chain>\w+)[ ]+(?<pdbSeq>\d+)[ ]+(?<aa>\w+)[ ]+(?<num>\d+?)[ ]+(?<ac>\w*)[ ]+(?<aaLetter>\w+)[ ]+(?<acSeq>\d+)','names');
-%             ac = tokens.ac;
-%             pdb = tokens.pdb;
-%             pdbSeq = str2num(tokens.pdbSeq);
-%             acSeq = str2num(tokens.acSeq);
-% 
-%             if ~isKey(pdbDico, upper(pdb))
-%                 disp(pdb);
-%                 pdbDico(upper(pdb)) = [pdbSeq acSeq];
-%             end
-%         catch err
-%         end
-% 
-%         line = fgetl(fMap);
-%     end
-% end
-
 pdbIds = getPdb(DB);
 for i = 1:numel(pdbIds)
     try
         ac = pdbIds{i};
         disp(ac);
+        % Very cool website keepinck track of the indexation !!!
         url = ['http://www.bioinf.org.uk/cgi-bin/pdbsws/query.pl?plain=1&qtype=pdb&id=' lower(ac) '&all=yes' ];
         s = urlread(url);
         s = s(1,5*49+1:6*49);

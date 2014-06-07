@@ -3,6 +3,11 @@ function [eigVect, eigVal, aaEigenBase] = residuePCA ( aaDBcount, ...
 %RESIDUEPCA calculates the covariance matrix of the matrix of aa
 %occurences and returns its eigen vectors and eigenvalues, as well
 %as the matrix of aa occurences in the eigen base.
+% The normalize argument (arg2) corresponds to the different means of normalization of the data:
+%	- 1: normal PCA where the mean of the data is removed to calculate the covariance matrix
+%	- 2: remove the average amino acid frequency in the Uniprot DB from the data
+%	- 3: remove the average amino acid frequency in the membraneSDB from the data 
+% The graph argument (arg3) is 1 when plots are wanted and 0 otherwise.
 	% PCA on normalized data
 	if normalize == 1
 		% Transpose to have aa as column and

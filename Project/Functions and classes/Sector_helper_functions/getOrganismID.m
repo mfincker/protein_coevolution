@@ -1,4 +1,7 @@
 function [ organismID ] = getOrganismID(data, molID)
+%% GETORGANISMID returns the taxonomical id number of the
+% organism in which the peptide, characterized by its molID 
+% and the pdb record in the form of a pdb matlab structure, is.
 	if molID == -1
 		organismID = -1;
 	else

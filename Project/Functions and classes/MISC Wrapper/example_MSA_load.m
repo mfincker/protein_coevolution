@@ -1,3 +1,7 @@
+%% Example from Alex from before the MISC wrapper
+% automation.
+% It shows the mechanism of the MISC algorithm.
+
 %% Importing MSAs into MATLAB
 rawdata = fastaread('1UD2-aligned.fasta');
 numseq = length(rawdata);

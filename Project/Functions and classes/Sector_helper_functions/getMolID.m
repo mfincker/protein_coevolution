@@ -1,4 +1,10 @@
 function [ molID ] = getMolID(data, chainID)
+%GETMOLID returns the mol Id letter corresponding to the molID
+% of a peptide, characterized by its uniprot accession number, 
+%in the given pdb matlab struct.
+%   Arguments:
+%       - data : pdb matlab struct
+%       - chainID : char array of a uniprot number
 	if (sum(strcmp(chainID,'protein complex') + strcmp(chainID,'undefined'))>0)
 		molID = -1;
 	else

@@ -1,5 +1,12 @@
 function [ coords ] = getCoordinates ( data, ...
 					 	residueInd, chainID)
+%GETCOORDINATES returns a 3 x n matrix of the x,y and z coordinates
+% of the centroids of each residue in a sector.
+% The function takes as arguments:
+%	- the pdb matlab structure of the protein of which the sector is part of
+%	- the residue indexes
+%	- the chainID corresponding to the chain on wich the residues are located
+
 	if (sum(strcmp(chainID,'protein complex') + strcmp(chainID,'undefined'))>0)
 		coords = 'undefined';
 

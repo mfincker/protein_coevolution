@@ -1,4 +1,12 @@
 function [ EC ] = getEC(data, molID)
+%% GETEC returns the EC number (if it exists) of the protein
+% described by molID in the pdb matlab structure entered as input.
+% Input argument:
+%   - data: pdb matlab structure
+%   - molID: molID letter
+% The function returns 'undefined' if the EC number for this peptide
+% doesn't exist.
+
 	if molID == -1
 		EC = 'undefined';
 	else

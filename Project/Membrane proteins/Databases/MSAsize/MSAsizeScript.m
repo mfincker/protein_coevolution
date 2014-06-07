@@ -1,10 +1,17 @@
-% Record the number of sequences used in the MSA pruned by Brad function.
+% Record the number of sequences used in the MSA pruned by Brad's function
+% and save the result for further pruning of the SDB
 
+% List all MSA to process
 d =dir('./*-500-aligned.fasta');
+
+% Create a structure that will keep track
+% of the name of the MSA and the number of sequences
+% in the MSA
 sizeMSA = struct([]);
 smallMSA = {};
 errMSA = struct([]);
 
+% For each file:
 for i = 1:numel(d)
     rawdata = fastaread(d(i).name);
     numseq = length(rawdata);
@@ -17,12 +24,14 @@ for i = 1:numel(d)
         msa(curseq,:) = rawdata(curseq).Sequence;
     end
     
+    % Get the reference sequence to which distance will be calculated
     acc = regexp(d(i).name, '(?<id>.+)-500-aligned.fasta','names');
     acc = acc.id;
     seedseq = getgenpept(acc);
     seedseq = seedseq.Sequence;
     residue_numbers = 1:length(seedseq);
     try
+        % Calculate the distance from every sequence in the MSA to the reference seq
         msaKept = msa_sort_maeva(acc, msa, seedseq);
         sizeMSA = [sizeMSA, struct('PDB', acc, 'MSAsize', size(msaKept, 1))];
         disp([acc ' : ' num2str(size(msaKept, 1))]);
@@ -36,6 +45,7 @@ for i = 1:numel(d)
     
 end
 
+% Save results
 save('new_uMembraneSizeMSA_Leah.mat', 'sizeMSA');
 save('new_uMembraneSmallMSA_Leah.mat', 'smallMSA');
 save('new_uMembraneMSAerrors_Leah.mat', 'errMSA');
